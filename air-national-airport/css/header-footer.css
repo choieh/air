@@ -168,7 +168,6 @@ footer{
     right: 0;
     bottom: 0;
     width: 100%;
-/*    height: 200px;*/
     height: 120px;
     color: #fff;
     font-size: 12px;
@@ -228,7 +227,6 @@ address{
 .lnb li{
     float: left;
     width: 16.6666%;
-/*    border-right: 1px solid #ccc;*/
     box-sizing: border-box;
 }
 
@@ -240,12 +238,6 @@ address{
 .lnb li:nth-child(5){
     width: 23.3%;
 }
-
-/*
-.lnb li:last-child{
-    border-right: 0;
-}
-*/
 
 .lnb li:first-child a{
     text-align: left;
@@ -261,7 +253,6 @@ address{
     color: #aaa;
     font-size: 10px;
     text-align: center;
-/*    outline: 1px solid red;*/
 }
 
 .lnb li:hover a{
