@@ -71,6 +71,7 @@ a:link ,a:active,a:visited,a:focus{
     content: '';
     display: block;
     clear: both;
+    overflow: hidden;
 }
 
 
