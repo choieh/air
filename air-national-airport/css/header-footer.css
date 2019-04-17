@@ -7,6 +7,10 @@ img{
     height: 100%;
 }
 
+body{
+    
+}
+
 #wrap{
     width: 100%;
 }
@@ -158,11 +162,17 @@ header{
 
 /*footer*/
 footer{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 200px;
-    color: #ccc;
+/*    height: 200px;*/
+    height: 120px;
+    color: #fff;
     font-size: 12px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
 }
 
 .inner-footer{
@@ -171,12 +181,22 @@ footer{
     margin: 0 auto;
 }
 
+
+
+/*footer-info*/
+.info-copy{
+    overflow: hidden;
+    width: 50%;
+    margin: 30px auto;
+}
+
 .cs{
     float: left;
-    margin-left: 20px;
     color: #fff;
     font-size: 36px;
-    line-height: 36px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
 }
 
 .cs > span{
@@ -186,33 +206,32 @@ footer{
 .cs > span+span{
     color: #0099ff;
     font-size: 40px;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 
-.info-copy{
+address{
     float: right;
-    margin-right: 20px;
-    margin: 50px 20px 70px 0;
-}
-
-.info-copy > address{
     font-size: 20px;
-    font-weight: 100;
-}
-
-.info-copy > p{
     font-size: 15px;
     font-weight: 100;
-    font-style: italic;
 }
 
+
+/*.lnb*/
+.lnb{
+    width: 90%;
+    margin: 10px auto;
+}
 
 .lnb li{
     float: left;
     width: 16.6666%;
-    border-right: 1px solid #ccc;
+/*    border-right: 1px solid #ccc;*/
     box-sizing: border-box;
 }
+
 
 .lnb li:nth-child(1){
     width: 10%;
@@ -222,9 +241,11 @@ footer{
     width: 23.3%;
 }
 
+/*
 .lnb li:last-child{
     border-right: 0;
 }
+*/
 
 .lnb li:first-child a{
     text-align: left;
@@ -237,9 +258,24 @@ footer{
 .lnb li a{
     display: inline-block;
     width: 100%;
-    color: #ccc;
+    color: #aaa;
+    font-size: 10px;
     text-align: center;
 /*    outline: 1px solid red;*/
+}
+
+.lnb li:hover a{
+    text-decoration: underline;
+}
+
+
+
+.inner-footer>p{
+    width: 100%;
+    color: #aaa;
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
 }
 
 
