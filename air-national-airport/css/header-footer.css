@@ -43,7 +43,7 @@ header{
     overflow: hidden;
     text-shadow:none;
     color:transparent;
-    background: #0099ff url(../img/index/logo.png) no-repeat top -45px center;
+    background: #0099ff url(../img/index/logo.png) no-repeat top 28px center / 97px 75px;
 }
 
 .logo a>img{
