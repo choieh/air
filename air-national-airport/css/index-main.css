@@ -24,6 +24,7 @@ section {
     height: 100%;
 }
 
+
 .slide-viewer {
     position: relative;
     /* needed for IE7 */
@@ -69,6 +70,22 @@ section {
     text-align: right;
     font-weight: 100;
     animation: p 5s;
+}
+
+.slide{
+    background: url(../img/index/slide-1.jpg) no-repeat 0 0 / cover;
+}
+
+.slide-2{
+    background-image: url(../img/index/slide-2.jpg);
+}
+
+.slide-3{
+    background-image: url(../img/index/slide-3.jpg);
+}
+
+.slide-buttons{
+    z-index: 1000;
 }
 
 /*title keyframe*/

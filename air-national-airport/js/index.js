@@ -26,12 +26,11 @@ $(document).ready(function () {
      
      if(docHeight < currentScroll){
          $("footer").slideDown("fast");
-         
+        
      }else{
          $("footer").slideUp("fast");
          $("main").css({
-             "margin-bottom" : 120
-//             "margin-bottom" : 200
+            "margin-bottom" : 150 
          });
      }
      
