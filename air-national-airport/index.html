@@ -55,7 +55,7 @@
                             </li>
                             <li><a href="#">교통/주차</a></li>
                             <li><a href="#">공항정보</a></li>
-                            <li class="menu-on"><a href="#">고객샌터</a></li>
+                            <li class="menu-on"><a href="#">고객센터</a></li>
                         </ul>
                     </nav>
 
@@ -106,10 +106,47 @@
                         <h2 class="main-search-title">실시간 운항 검색</h2>
                         <div class="main-search-flight">
                             <div class="flight-btn">
-                                <a href="#"><i class="fas fa-plane-departure"></i><span>출발</span></a>
+                                <a href="#" class="start"><i class="fas fa-plane-departure"></i><span>출발</span></a>
+                                <a href="#" class="arrival"><i class="fas fa-plane-arrival"></i><span>도착</span></a>
+                            </div><!--//.flight-btn-->
+                            
+                            <div class="flight-form">
+                                <div class="form-to">
+                                    <h3>목적지 / 출발지</h3>
+                                    <select>
+                                        <option value="0">All Area</option>
+                                        <option value="1">국내</option>
+                                        <option value="2">중국</option>
+                                        <option value="3">동남아</option>
+                                        <option value="4">미주</option>
+                                        <option value="5">유럽</option>
+                                        <option value="6">대양주</option>
+                                    </select>
+                                </div>
+                                <div class="airline">
+                                    <h3>항공사</h3>
+                                    <select>
+                                        <option value="0">All Airlines</option>
+                                        <option value="1">대한항공</option>
+                                        <option value="2">싱가포르항공</option>
+                                        <option value="3">에어프랑스</option>
+                                        <option value="4">아시아나항공</option>
+                                        <option value="5">중국남방항공</option>
+                                        <option value="6">카타르항공</option>
+                                        <option value="7">터키항공</option>
+                                    </select>
+                                </div>
+                                <div class="airline-num">
+                                    <h3>항공편</h3>
+                                    <input type="text" placeholder="항공편 명을 입력해주세요.">
+                                </div>
+                            </div><!--//.flight-form-->
+                            <div class="flight-result-btn">
+                                <a href="#">검색</a>
                             </div>
-                        </div>
-                    </div>
+                            
+                        </div><!--//.main-search-flight-->
+                    </div><!--//.main-search-inner-->
                 </article>
 
             </section>
