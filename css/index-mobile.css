@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+#wrap {
+    width: 100%;
+}
+
+
+/*main*/
+main {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+/*main-slider*/
+.slider {
+    position: relative;
+    max-width: 100%;
+}
+
+.slide-viewer {
+    position: relative;
+    /* needed for IE7 */
+    overflow: hidden;
+    height: calc(100vh - 100px);
+}
+
+.slide-group {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide-1{
+    background: url(../img/index/slide-1.jpg) no-repeat center / cover;
+}
+
+.slide-2{
+    background: url(../img/index/slide-2.jpg) no-repeat center / cover;
+}
+
+.slide-3{
+    background: url(../img/index/slide-4.jpg) no-repeat center / cover;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+
+.slide-3::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 66.6666%;
+    text-align: center;
+}
+
+.title > h2 {
+    margin-bottom: 5px;
+    /*    font-size: 28px;*/
+    font-size: 1.75em;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.title > p {
+    /*    font-size: 20px;*/
+    font-size: 1.25em;
+}
+
+/********** BUTTONS **********/
+.slide-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3000;
+}
+
+.slide-btn {
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 200%;
+    line-height: 0.5em;
+}
+
+.slide-btn.active,
+.slide-btn:hover {
+    color: #0099ff;
+    cursor: pointer;
+}
+
+
+
+/*#main-search*/
+#search {
+    width: 100%;
+    height: auto;
+}
+
+.main-search {
+    width: 100%;
+    height: 630px;
+}
+
+.main-search-inner {
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.main-search-title {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    /*    font-size: 28px;*/
+    font-size: 1.750em;
+    text-align: center;
+}
+
+.main-search-flight {
+    position: relative;
+    width: 100%;
+}
+
+.flight-btn {
+    width: 100%;
+    height: 30px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.flight-btn a {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 100%;
+    /*    font-size: 20px;*/
+    font-size: 1.250em;
+}
+
+.flight-btn a.select {
+    color: #0099ff;
+}
+
+.flight-btn a i {
+    margin-right: 10px;
+}
+
+/*flight-form*/
+.flight-form {
+    width: 100%;
+    height: auto;
+    color: #333;
+    /*    font-size: 18px;*/
+    font-size: 1.125em;
+}
+
+.flight-form .child {
+    margin-bottom: 30px;
+}
+
+.flight-form h3 {}
+
+
+.flight-form select {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.airline-num > input[type="text"] {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+/*검색 버튼*/
+.flight-result-btn {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    /*    font-size: 24px;*/
+    font-size: 1.5em;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #0099ff;
+}
+
+.flight-result-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    color: #fff;
+}
+
+.flight-result-btn a::before {
+    display: inline-block;
+    content: '';
+    width: 24px;
+    height: 18px;
+    margin-right: 5px;
+    background: url(../img/index/search-icon.png) no-repeat center / contain;
+}
+
+
+
+/*검색결과 이미지*/
+.result-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: url(../img/index/search-result.png) no-repeat center bottom / contain;
+}
+
+.result-img > .close {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    display: block;
+    width: 100%;
+    height: 50px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+
+
+
+/*미디어 쿼리*/
+@media all and (min-width:768px) {
+
+    .result-img {
+        background-color: #0099ff;
+        border-radius: 15px;
+    }
+
+    .result-img > .close {
+        top: 0;
+    }
+    
+      /*slide*/
+.title > h2 {
+    margin-bottom: 5px;
+    /*    font-size: 50px;*/
+    font-size: 3.125em;
+}
+
+.title > p {
+    /*    font-size: 42px;*/
+    font-size: 2.625em;
+    font-weight: 100;
+}
+
+}
+
+/*-----------//768px*/
+
+
+
+@media all and (min-width:1280px) {
+    /*main*/
+    main {
+        position: relative;
+        padding-top: 0;
+    }
+    
+    /*slide*/
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    text-align: left;
+}
+
+.title > h2 {
+    margin-bottom: 5px;
+    /*    font-size: 70px;*/
+    font-size: 4.375em;
+}
+
+.title > p {
+    /*    font-size: 50px;*/
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.slide > img {
+    max-width: 1920;
+    width: 100%;
+    outline: 1px solid red;
+}    
+    
+    
+    #search {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 1280px;
+    height: 100%;
+}
+    
+.main-search {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 450px;
+    height: 600px;
+}
+    
+   
+    
+
+}/*-----1280px*/
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
