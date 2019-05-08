@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900');
+
+/* Total layout */
+*::selection {color: #fff; background: #fce804;}
+#wrap{width: 100%;}
+main:after{content: ''; display: block; clear: both; padding-bottom: 80px;}
+section{width: 1280px; margin: 0 auto;}
+
+/* Top content */
+.top-content{width: 100%; height: 270px; margin-bottom: 40px; border-bottom: 3px solid #009afa;}
+.top-content div{position: relative; width: 1280px; height: 100%; margin: 0 auto; background: url(../img/process/img_bg-top-content.png) no-repeat center bottom / cover; text-align: center;}
+.top-content h2{position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); font: 36px 'Noto Sans KR Medium', 'sans-serif'; color: #424242;}
+.top-content p{position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); font: 18px 'Noto Sans KR Thin', 'sans-serif'; color: #7a7a7a;}
+
+/* Content - Tab */
+.tab{height: 70px; text-align: center; font-size: 20px;}
+.tab a{float: left; width: 50%;}
+.tab a:first-child{height: 70px; line-height: 70px; color: #009afa; border: 1px solid #7a7a7a; border-bottom: none;}
+.tab a:last-child{height: 65px; margin-top: 5px; line-height: 60px; color: #424242; background: #d8d8d8; border-bottom: 1px solid #7a7a7a;}
+.tab i:before{margin-right: 30px;}
+
+/* Content - Route */
+.route{width: 100%; height: 350px; background: url(../img/process/img_route_entran.png) no-repeat center;}
+.depart .route{background-image: url(../img/process/img_route_depart.png)}
+
+/* Content - ps list 공통 속성 */
+.depart {display: none;}
+.ps-list{width: 100%; margin: 0 auto;}
+.number{font: 24px 'Noto Sans KR Thin', 'sans-serif'; color: #7a7a7a;}
+h3{margin-top: 220px; font: 28px 'Noto Sans KR Regular', 'sans-serif'; color: #424242;}
+.text{margin-top: 25px; font: 18px 'Noto Sans KR Regular', 'sans-serif'; color: #7a7a7a; text-align: left;}
+.text span{font-weight: bold;}
+
+/* Content - PS Content */
+.ps-content{position: relative; width: 400px; height: 600px; float: left; padding: 30px; margin: 0 0 40px 20px; background: url(../img/process/img_entran_01_takeoff.png) no-repeat center 100px / 130px; text-align: center; border: 1px solid #d8d8d8;}
+.more{position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%); width: 360px;}
+.more i{color: #009afa;}
+.entran .ps-content:nth-child(4) .more, .depart .ps-content:nth-child(2) .more, .depart .ps-content:nth-child(4) .more, .depart .ps-content:nth-child(5) .more, .depart .ps-content:nth-child(6) .more{top: 86%;}
+.ps-content .btnmore{position: relative; display: block; padding: 10px 20px; margin-bottom: 15px; text-align: left; color: #7a7a7a; border: 1px solid #d8d8d8;}
+.btnmore:hover{background: #009afa; color: white; border: 1px solid transparent;}
+.btnmore:hover i{color: white;}
+.ps-content i{position: absolute; top: 50%; right: 15px; transform: translateY(-50%);}
+
+/* Content - Entran */
+.entran .ps-content:nth-child(1){background-image: url(../img/process/img_entran_01_takeoff.png);}
+.entran .ps-content:nth-child(2){background-image: url(../img/process/img_entran_02_quarantine.png);}
+.entran .ps-content:nth-child(3){background-image: url(../img/process/img_entran_03_examination.png);}
+.entran .ps-content:nth-child(4){background-image: url(../img/process/img_entran_04_luggage.png);}
+.entran .ps-content:nth-child(5){background-image: url(../img/process/img_entran_05_inspection.png);}
+.entran .ps-content:nth-child(6){background-image: url(../img/process/img_entran_06_terminal.png);}
+
+/* Content - Depart */
+.depart .ps-content:nth-child(1){background-image: url(../img/process/img_depart_01_terminal.png);}
+.depart .ps-content:nth-child(2){background-image: url(../img/process/img_depart_02_Checkin.png);}
+.depart .ps-content:nth-child(3){background-image: url(../img/process/img_depart_03_luggage.png);}
+.depart .ps-content:nth-child(4){background-image: url(../img/process/img_depart_04_report.png);}
+.depart .ps-content:nth-child(5){background-image: url(../img/process/img_depart_05_inspection.png);}
+.depart .ps-content:nth-child(6){background-image: url(../img/process/img_depart_06_inspection.png);}
+.depart .ps-content:nth-child(7){background-image: url(../img/process/img_depart_07_landing.png); width: 100%; height: 50%;}
+.depart .ps-content:nth-child(7) .text{display: inline-block; text-align: center;}
+
+/* 반응형 */
+@keyframes scale {0%{transform:scale(0);} 100%{transform:scale(1);}}
+@media screen and (min-width: 376px) and (max-width: 768px){
+    /* Total layout */
+    section{width: 100%;}
+    
+    /* Top content */
+    .top-content div{width: 100%;}
+    .top-content h2, .top-content p{margin-top: 15px;}
+    
+    /* Content - Tab */
+    .content{padding: 0 30px;}
+    .tab{font-size: 18px;}
+    
+    /* Content - PS Content */
+    .ps-content{width: 46%;}
+    .route{width: 100%; background-size: contain;}
+    h3{font-size: 22px;}
+    .text{font-size: 16px;}
+    .more{width: 90%; font-size: 14px;}
+    .depart .ps-content:nth-child(7){width: 95%;}
+}
+@media screen and (max-width: 375px){
+    /* Total layout */
+    .route, .top-content p{display: none;}
+    main:after{padding-bottom: 40px;}
+    section{width: 100%;}
+    
+    /* Top content */
+    .top-content{height: 200px; margin-bottom: 20px;}
+    .top-content div{width: 100%;}
+    .top-content h2{font-size: 26px; margin-top: 30px;}
+    
+    /* Content - Tab */
+    .content{padding: 0 20px;}
+    .tab{font-size: 16px;}
+    
+    /* Content - PS Content */
+    .ps-content{width: 100%; margin-left: 0;}
+    h3{font-size: 22px;}
+    .text{text-align: center;}
+    .more{width: 94%; font-size: 14px;}
+    .entran .ps-content:nth-child(6), .depart .ps-content:nth-child(1), .depart .ps-content:nth-child(7){height: 100%;}
+}
