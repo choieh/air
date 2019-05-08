@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Air National Airport</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/header-footer-index.css">
+	<link rel="stylesheet" href="css/realtime-flight_mobile.css">
+	<link rel="stylesheet" href="css/calendarview.css">
+
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script src="js/header-mobile.js"></script>
+	<script src="js/realtime-flight.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<div class="inner-header">
+				<h1 class="logo"><a href="#">Air National Airport</a></h1>
+				<!--트리거버튼-->
+				<a href="#" class="nav-bar">
+					<span class="item"></span>
+					<span class="item"></span>
+					<span class="item"></span>
+				</a>
+				<nav>
+					<div class="tnb">
+						<a href="#">로그인</a>
+						<a href="#">회원가입</a>
+						<a href="#">English</a>
+						<a href="#">사이트맵</a>
+					</div>
+					<div class="gnb">
+						<ul class="gnb-list">
+							<li class="menu-on"><a href="#">운행현황</a>
+								<div class="sub-menu">
+									<ol class="clear">
+										<li><a href="#">실시간 운행현황</a></li>
+										<li><a href="#">정기 운항 스케줄</a></li>
+									</ol>
+								</div>
+								<!--//.sub-menu-->
+							</li>
+							<li><a href="#">탑승절차</a></li>
+							<li><a href="#">교통/주차</a></li>
+							<li><a href="#">공항정보</a></li>
+							<li class="menu-on"><a href="#">고객센터</a>
+								<div class="sub-menu service">
+									<ol class="clear">
+										<li><a href="#">자주하는 질문</a></li>
+										<li><a href="#">상담/문의</a></li>
+										<li><a href="#">유실물찾기</a></li>
+										<li><a href="#">전화번호안내</a></li>
+									</ol>
+								</div>
+								<!--//.sub-menu-->
+							</li>
+						</ul>
+					</div>
+					<!--//.gnb-mobile-->
+
+					<div class="gnb-web">
+						<ul class="gnb-web-list">
+							<li class="web-menu-on"><a href="#">운행현황</a>
+								<div class="web-sub-menu time-list">
+									<ol class="clear">
+										<li><a href="#">실시간 운행현황</a></li>
+										<li><a href="#">정기 운항 스케줄</a></li>
+									</ol>
+								</div>
+								<!--//.sub-menu-->
+							</li>
+							<li><a href="#">탑승절차</a></li>
+							<li><a href="#">교통/주차</a></li>
+							<li><a href="#">공항정보</a></li>
+							<li class="web-menu-on"><a href="#">고객센터</a>
+								<div class="web-sub-menu web-service">
+									<ol class="clear">
+										<li><a href="#">자주하는 질문</a></li>
+										<li><a href="#">상담/문의</a></li>
+										<li><a href="#">유실물찾기</a></li>
+										<li><a href="#">전화번호안내</a></li>
+									</ol>
+								</div>
+								<!--//.sub-menu-->
+							</li>
+						</ul>
+					</div>
+					<!--//gnb-web-->
+				</nav>
+				<!--//nav-->
+			</div>
+			<div class="header-bottom"></div>
+		</header>
+		<!--//header-->
+		<main>
+			<section class="top-content">
+				<div>
+					<h2>실시간 운행 정보</h2>
+					<p>항공사별 도시별 출발정보를 안내합니다.</p>
+				</div>
+			</section>
+			<!--//.top-content-->
+			<section class="content">
+				<article class="content-tab">
+					<div class="tab">
+						<a href="#" class="on"><i class="fas fa-plane-departure"></i> 출발</a>
+						<a href="#"><i class="fas fa-plane-arrival"></i> 도착</a>
+					</div>
+					<div class="outline">
+						<p>
+							- 운항 편명을 클릭하면 상세정보를 확인하실 수 있습니다. <br>
+							- 공항 운영 상황에 따라 아래 정보는 변경될 수 있으니, 항공편에 대한 정확한 정보는 해당 항공사에 확인해주시기 바랍니다.
+						</p>
+						<form class="search">
+							<fieldset>
+								<legend>항공편검색</legend>
+
+								<!--https://www.w3schools.com/howto/howto_custom_select.asp-->
+								<select name="terminal">
+									<option value="terminal00" selected>전체 터미널</option>
+									<option value="terminal01">T1</option>
+									<option value="terminal02">T2</option>
+								</select>
+								<!--캘린더-->
+
+								<input type="text" placeholder="YYYY.MM.DD" class="flight-date">
+								<i class="far fa-calendar-alt"></i>
+
+								<select name="time" id="">
+									<option value="time00" selected>전체 시간</option>
+									<option value="time01">09:30 이후</option>
+									<option value="time01">11:30 이후</option>
+									<option value="time01">13:30 이후</option>
+									<option value="time01">15:30 이후</option>
+									<option value="time01">17:30 이후</option>
+									<option value="time01">19:30 이후</option>
+									<option value="time01">21:30 이후</option>
+								</select>
+								<select name="destination" id="">
+									<option selected disabled hidden>목적지 선택</option>
+									<option value="dtn01">괌</option>
+									<option value="dtn01">교토</option>
+									<option value="dtn01">그라나다</option>
+									<option value="dtn01">런던</option>
+									<option value="dtn01">뮌헨</option>
+									<option value="dtn01">오사카</option>
+									<option value="dtn01">파리</option>
+									<option value="dtn01">프랑크푸르트</option>
+									<option value="dtn01">하와이</option>
+								</select>
+								<select name="airline" id="">
+									<option selected disabled hidden>항공사 선택</option>
+									<option value="line01">대한항공</option>
+									<option value="line03">루프트한자</option>
+									<option value="line02">아시아나항공</option>
+									<option value="line07">영국항공</option>
+									<option value="line04">에어아시아</option>
+									<option value="line06">제주항공</option>
+									<option value="line05">티웨이항공</option>
+									<option value="line08">캐나다항공</option>
+								</select>
+								<input type="text" placeholder="편명입력" class="flight-name">
+								<a href="#" class="btn-search">
+									<i class="fas fa-search"></i>
+								</a>
+							</fieldset>
+						</form>
+					</div>
+					<!--//.search-->
+				</article>
+				<!--//.content-tab-->
+				<article class="flight-list">
+					<div class="update">
+						<p>마지막 업데이트 : 2019.05.02 (목) 16:02</p>
+						<a href="JavaScript:window.location.reload()"><i class="fas fa-redo-alt"></i></a>
+					</div>
+					<ul class="list">
+						<li class="list-header">
+							<ul>
+								<li>출발시간</li>
+								<li>목적지</li>
+								<li>항공사/운항편명</li>
+								<li>터미널</li>
+								<li>체크인 카운터</li>
+								<li>게이트</li>
+								<li>출발현황</li>
+							</ul>
+						</li>
+						<!--//list-header-->
+						<li>
+							<a href="#" class="li">
+								<ul>
+									<li>07 : 35</li>
+									<li>오사카</li>
+									<li>대한항공</li>
+									<li>T2</li>
+									<li>A01 - A30</li>
+									<li>G01</li>
+									<li class="status">출발</li>
+								</ul>
+							</a>
+							<!--datail-->
+							<div class="detail">
+								<div class="inner-detail departure">
+									<h3>출발지</h3>
+									<div>
+										<p>대한민국<br>에어국제공항</p>
+										<strong>서울</strong>
+										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 5 (일)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>체크인</span>
+												<b>K19 - K28</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T1</b>
+											</li>
+											<li>
+												<span>게이트</span>
+												<b>G22</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="center">
+									<p>
+										<span>시차</span>
+										<b>7시간 00분</b>
+									</p>
+								</div>
+								<div class="inner-detail arrive">
+									<h3>목적지</h3>
+									<div>
+										<p>일본<br>간사이국제공항</p>
+										<strong>오사카</strong>
+										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 4 (토)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T5</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="li">
+								<ul>
+									<li>08 : 40</li>
+									<li>런던</li>
+									<li>영국항공</li>
+									<li>T1</li>
+									<li>B19 - B30</li>
+									<li>G17</li>
+									<li class="status">지연</li>
+								</ul>
+							</a>
+							<!--datail-->
+							<div class="detail">
+								<div class="inner-detail departure">
+									<h3>출발지</h3>
+									<div>
+										<p>대한민국<br>에어국제공항</p>
+										<strong>서울</strong>
+										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 5 (일)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>체크인</span>
+												<b>K19 - K28</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T1</b>
+											</li>
+											<li>
+												<span>게이트</span>
+												<b>G22</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="center">
+									<p>
+										<span>시차</span>
+										<b>7시간 00분</b>
+									</p>
+								</div>
+								<div class="inner-detail arrive">
+									<h3>목적지</h3>
+									<div>
+										<p>독일<br>암마인국제공항</p>
+										<strong>프랑크푸르트</strong>
+										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 4 (토)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T5</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="li">
+								<ul>
+									<li>14 : 25</li>
+									<li>프랑크푸르트</li>
+									<li>루프트한자</li>
+									<li>T1</li>
+									<li>K19 - K28</li>
+									<li>G22</li>
+									<li class="status">탑승중</li>
+								</ul>
+							</a>
+							<!--datail-->
+							<div class="detail">
+								<div class="inner-detail departure">
+									<h3>출발지</h3>
+									<div>
+										<p>대한민국<br>에어국제공항</p>
+										<strong>서울</strong>
+										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 5 (일)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>체크인</span>
+												<b>K19 - K28</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T1</b>
+											</li>
+											<li>
+												<span>게이트</span>
+												<b>G22</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="center">
+									<p>
+										<span>시차</span>
+										<b>7시간 00분</b>
+									</p>
+								</div>
+								<div class="inner-detail arrive">
+									<h3>목적지</h3>
+									<div>
+										<p>독일<br>암마인국제공항</p>
+										<strong>프랑크푸르트</strong>
+										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 4 (토)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T5</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="li">
+								<ul>
+									<li>19 : 25</li>
+									<li>파리</li>
+									<li>대한항공</li>
+									<li>T2</li>
+									<li>A01 - K30</li>
+									<li>G03</li>
+									<li class="status">탑승준비</li>
+								</ul>
+							</a>
+							<!--datail-->
+							<div class="detail">
+								<div class="inner-detail departure">
+									<h3>출발지</h3>
+									<div>
+										<p>대한민국<br>에어국제공항</p>
+										<strong>서울</strong>
+										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 5 (일)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>체크인</span>
+												<b>K19 - K28</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T1</b>
+											</li>
+											<li>
+												<span>게이트</span>
+												<b>G22</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="center">
+									<p>
+										<span>시차</span>
+										<b>7시간 00분</b>
+									</p>
+								</div>
+								<div class="inner-detail arrive">
+									<h3>목적지</h3>
+									<div>
+										<p>독일<br>암마인국제공항</p>
+										<strong>프랑크푸르트</strong>
+										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 4 (토)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T5</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="li">
+								<ul>
+									<li>19 : 25</li>
+									<li>파리</li>
+									<li>대한항공</li>
+									<li>T2</li>
+									<li>A01 - K30</li>
+									<li>G03</li>
+									<li class="status">탑승준비</li>
+								</ul>
+							</a>
+							<!--datail-->
+							<div class="detail">
+								<div class="inner-detail departure">
+									<h3>출발지</h3>
+									<div>
+										<p>대한민국<br>에어국제공항</p>
+										<strong>서울</strong>
+										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 5 일요일</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>체크인</span>
+												<b>K19 - K28</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T1</b>
+											</li>
+											<li>
+												<span>게이트</span>
+												<b>G22</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="center">
+									<p>
+										<span>시차</span>
+										<b>7시간 00분</b>
+									</p>
+								</div>
+								<div class="inner-detail arrive">
+									<h3>목적지</h3>
+									<div>
+										<p>독일<br>암마인국제공항</p>
+										<strong>프랑크푸르트</strong>
+										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 4 (토)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T5</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="li">
+								<ul>
+									<li>19 : 25</li>
+									<li>파리</li>
+									<li>대한항공</li>
+									<li>T2</li>
+									<li>A01 - K30</li>
+									<li>G03</li>
+									<li class="status">결항</li>
+								</ul>
+							</a>
+							<!--datail-->
+							<div class="detail">
+								<div class="inner-detail departure">
+									<h3>출발지</h3>
+									<div>
+										<p>대한민국<br>에어국제공항</p>
+										<strong>서울</strong>
+										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 5 (일)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>체크인</span>
+												<b>K19 - K28</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T1</b>
+											</li>
+											<li>
+												<span>게이트</span>
+												<b>G22</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="center">
+									<p>
+										<span>시차</span>
+										<b>7시간 00분</b>
+									</p>
+								</div>
+								<div class="inner-detail arrive">
+									<h3>목적지</h3>
+									<div>
+										<p>독일<br>암마인국제공항</p>
+										<strong>프랑크푸르트</strong>
+										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 4 (토)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T5</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="li">
+								<ul>
+									<li>19 : 25</li>
+									<li>파리</li>
+									<li>대한항공</li>
+									<li>T2</li>
+									<li>A01 - K30</li>
+									<li>G03</li>
+									<li class="status">탑승준비</li>
+								</ul>
+							</a>
+							<!--datail-->
+							<div class="detail">
+								<div class="inner-detail departure">
+									<h3>출발지</h3>
+									<div>
+										<p>대한민국<br>에어국제공항</p>
+										<strong>서울</strong>
+										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 5 (일)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>체크인</span>
+												<b>K19 - K28</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T1</b>
+											</li>
+											<li>
+												<span>게이트</span>
+												<b>G22</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="center">
+									<p>
+										<span>시차</span>
+										<b>7시간 00분</b>
+									</p>
+								</div>
+								<div class="inner-detail arrive">
+									<h3>목적지</h3>
+									<div>
+										<p>독일<br>암마인국제공항</p>
+										<strong>프랑크푸르트</strong>
+										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 4 (토)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T5</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="li">
+								<ul>
+									<li>19 : 25</li>
+									<li>파리</li>
+									<li>대한항공</li>
+									<li>T2</li>
+									<li>A01 - K30</li>
+									<li>G03</li>
+									<li class="status">탑승준비</li>
+								</ul>
+							</a>
+							<!--datail-->
+							<div class="detail">
+								<div class="inner-detail departure">
+									<h3>출발지</h3>
+									<div>
+										<p>대한민국<br>에어국제공항</p>
+										<strong>서울</strong>
+										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 5 (일)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>체크인</span>
+												<b>K19 - K28</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T1</b>
+											</li>
+											<li>
+												<span>게이트</span>
+												<b>G22</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="center">
+									<p>
+										<span>시차</span>
+										<b>7시간 00분</b>
+									</p>
+								</div>
+								<div class="inner-detail arrive">
+									<h3>목적지</h3>
+									<div>
+										<p>독일<br>암마인국제공항</p>
+										<strong>프랑크푸르트</strong>
+										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 4 (토)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T5</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="li">
+								<ul>
+									<li>19 : 25</li>
+									<li>파리</li>
+									<li>대한항공</li>
+									<li>T2</li>
+									<li>A01 - K30</li>
+									<li>G03</li>
+									<li class="status">탑승준비</li>
+								</ul>
+							</a>
+							<!--datail-->
+							<div class="detail">
+								<div class="inner-detail departure">
+									<h3>출발지</h3>
+									<div>
+										<p>대한민국<br>에어국제공항</p>
+										<strong>서울</strong>
+										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 5 (일)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>체크인</span>
+												<b>K19 - K28</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T1</b>
+											</li>
+											<li>
+												<span>게이트</span>
+												<b>G22</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="center">
+									<p>
+										<span>시차</span>
+										<b>7시간 00분</b>
+									</p>
+								</div>
+								<div class="inner-detail arrive">
+									<h3>목적지</h3>
+									<div>
+										<p>독일<br>암마인국제공항</p>
+										<strong>프랑크푸르트</strong>
+										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									</div>
+									<div>
+										<ul>
+											<li>
+												<span>2019. 5. 4 (토)</span>
+												<b>오후 14 : 25</b>
+											</li>
+											<li>
+												<span>터미널</span>
+												<b>T5</b>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!--//.list-->
+					<a href="#" class="btn-more"><i class="fa fa-plus-square-o" aria-hidden="true"></i> more</a>
+				</article>
+				<!--//.flight-list-->
+			</section>
+			<!--//.content-->
+		</main>
+		<!--//main-->
+		<footer>
+			<div class="inner-footer">
+				<div class="info-cs">
+					<p class="cs">
+						고객센터 <span>│</span><span>1577-1600</span>
+					</p>
+					<div class="info-copy">
+						<address>에어국제공항 제1여객터미널:22382 인천시 중구 공항로 272</address>
+						<p>&copy;Air Internaional Airport Corporation. All rights reserved.</p>
+					</div>
+				</div>
+				<ul class="lnb clear">
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">항공안전신고</a></li>
+					<li><a href="#">저작권보호정책</a></li>
+					<li><a href="#">이메일 주소 무단수집 거부</a></li>
+					<li><a href="#">시각장애인이용안내</a></li>
+				</ul>
+			</div>
+			<!--//.inner-footer-->
+		</footer>
+		<!--//footer-->
+	</div>
+	<!--//#wrap-->
+
+	<!--	<script>
+	//캘린더
+	function setupCalendars() {
+		// Popup Calendar
+		Calendar.setup(
+			{
+				dateField: 'popupDateField',
+				triggerElement: 'popupDateField'
+			}
+		)
+	}
+	Event.observe(window, 'load', function() { setupCalendars() });
+	</script>-->
+</body>
+
+</html>
