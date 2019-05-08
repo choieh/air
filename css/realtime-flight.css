@@ -3,10 +3,8 @@
   background: #ed6978;
 }
 
-main {padding-top: 20px;}
-
 /*.top-content*/
-.top-content {width: 100%; height: 150px; border-bottom: 1px solid #009afa; background: url(../img/realtime-flight/bg_top_content.png) no-repeat bottom center / contain; color: #424242}
+.top-content {width: 100%; height: 200px; border-bottom: 1px solid #009afa; background: url(../img/realtime-flight/bg_top_content.png) no-repeat bottom center / contain; color: #424242}
 .top-content > div {position: relative; width: 100%; height: 100%; text-align: center;}
 .top-content > div h2 {position: absolute; top: 30%; left: 50%; transform: translateX(-50%); font-size: 26px;}
 .top-content > div p {position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); line-height: 1.4; font-size: 14px;}
