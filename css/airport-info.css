@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* 공통요소 */
+*::selection {color: #fff; background: #fce804;}
+section {position: relative; width: 100%; height: calc(100vh); overflow: hidden;}
+article {width: 68.75%; margin: 0 auto;}
+h2 {font-size: 60px; font-weight: 400; line-height: 1.2;}
+p {font-size: 19px; font-weight: 300; line-height: 1.5;}
+.thin {font-weight: 100;}
+
+/* section intro */
+#intro {position: absolute; width: 82.6041%; left: 50%; transform: translate(-50%);}
+.img-box {position: absolute; width: 100%; height: 100%; background: url(../img/airport-info/intro_bg.jpg) no-repeat center / cover fixed; animation: bgani 1.8s; transform-origin: center;}
+@keyframes bgani {
+	0% {transform: scale(1.3)}
+	100% {transform: scale(1)}
+}
+
+.intro-tbox {width: 50%; float: right; margin-top: 160px; color: #fff;}
+.intro-tbox p {padding-top: 20px;}
+.intro-tbox:after {content: ''; display: block; border-left: solid 1px #fff; height: 170px; margin-top: 40px;}
+
+/* section info */
+section:nth-child(2) {background: #009afa;}
+#info {color: #fff; text-align: center;}
+.inner-info {position: absolute; width: inherit; top: 50%; transform: translateY(-50%);}
+.info-tbox {margin-bottom: 40px;}
+.info-tbox .sub-title {font-size: 15px; font-weight: 100; letter-spacing: 1px; color: #d8d8d8;}
+.info-tbox > h2 {font-size: 50px; padding: 5px 0 30px;}
+.info-tbox > p:last-child {text-align: left;}
+.info-tbox .yellow {font-weight: 300; color: #fce804;}
+
+#info .icon {width: 100%; color: #424242;}
+.icon > div {position: relative; float: left; width: 26.6666%; margin-right: 10%; height: 350px; background: #fff; box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.3); background-repeat: no-repeat; background-size: 100px; background-position: top 20% left 50%;}
+.icon .airport {background-image: url(../img/airport-info/ico_airplane.png);}
+.icon .city {background-image: url(../img/airport-info/ico_cityscape.png);}
+.icon .nation {background-image: url(../img/airport-info/ico_earth.png); margin-right: 0;}
+.icon span {position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); font-size: 70px; font-weight: 400; padding: 20px 0;}
+.icon p {position: absolute; width: 100%; bottom: 10%; left: 50%; transform: translateX(-50%); font-size: 32px; font-weight: 300;}
+
+/* section since */
+section:nth-child(3) {background: #eee;}
+#since {color: #424242; text-align: center;}
+.inner-since {position: absolute; width: inherit; height: 500px; top: 50%; transform: translateY(-50%);}
+.inner-tbox .sub-title {font-size: 17px; font-weight: 100; letter-spacing: 1px; color: #424242;}
+.inner-tbox h2 {font-size: 35px; padding-top: 30px;}
+.inner-tbox .sky {font-weight: 500; color: #009afa;}
+
+.year-box {position: absolute; top: 50%; transform: translateY(-50%); width: 100%;}
+.year-box > p {font-size: 350px; font-weight: 500; line-height: 1;}
+.year-box .year-left {float: left; margin-left: -15px; height: auto;}
+.year-box .year-right {float: right; margin-right: -20px; height: auto; overflow: hidden;}
+
+.inner-since .airplane-img {position: absolute; top: 55%; left: 48%; transform: translate(-50%,-50%); z-index: 1;}
+.inner-since .airplane-img img {max-width: none;}
+.inner-since > p {position: absolute; width: 100%; bottom: 0; text-align: center;}
+
+/* section ci */
+section:nth-child(4) {background: #fff;}
+#ci {position: relative; height: 503px; top: 50%; transform: translateY(-50%); overflow: hidden; color: #424242;}
+.inner-ci-left {float: left; width: 70%; padding-right: 50px;}
+.inner-ci-left > .sub-title {font-size: 28px; font-weight: 100;}
+.inner-ci-left > h2 {font-size: 50px; padding: 20px 0 30px;}
+.inner-ci-left > h2 > .sky {font-weight: 300; color: #009afa;}
+.inner-ci-left .ci-sub-title {display: block; font-weight: 500; font-size: 23px; padding: 15px 0 5px 0;}
+.inner-ci-left .ci-down {padding-top: 70px;}
+.inner-ci-left .ci-down a {color: #7a7a7a; font-weight: 300; padding: 5px 15px 8px; border: 1px solid #7a7a7a; border-radius: 20px;}
+.inner-ci-left .ci-down a + a {margin-left: 10px;}
+.inner-ci-left .ci-down a:hover, .inner-ci-left .ci-down a:focus {background: #009afa; color: #fff; border: 1px solid transparent;}
+.inner-ci-left .ci-down i {font-size: 12px;}
+
+.inner-ci-right {float: left; width: 30%;}
+.inner-ci-right .ci-image {width: 100%; height: auto; margin: 80px 0 15px 0;}
+.inner-ci-right .ci-image img {width: 100%; height: 100%;}
+.inner-ci-right .ci-color p {display: inline-block; float: left; width: 50%; font-size: 19px; font-weight: 200;}
+.ci-color .ci-color-y {text-align: right;}
+.ci-color .ci-color-b:before {content: ''; background: url(../img/airport-info/airblue.png) no-repeat center; padding-left: 20px;}
+.ci-color .ci-color-y:before {content: ''; background: url(../img/airport-info/airyellow.png) no-repeat center; padding-left: 20px;}
+
+/* section charter */
+section:nth-child(5) {background: #eee;}
+#charter {position: relative; top: 50%; transform: translateY(-50%); text-align: center; color: #424242;}
+.charter-tbox > h2 {font-size: 50px; margin-bottom: 20px;}
+.charter-tbox .marks {color: #d8d8d8;}
+.charter-tbox .marks i:first-child {padding-right: 30px;}
+.charter-tbox .marks i:last-child {padding-left: 30px;}
+.charter-tbox .more {position: relative; padding: 0 30px; font-size: 19px; font-weight: 400; color: #009afa;}
+.charter-tbox .more img {position: absolute; top: 5px; right:20px; width: 22px; height: 22px; opacity: 0; transition: all 0.4s 0.1s;}
+.charter-tbox .more:hover img, .charter-tbox .more:focus img {right: 0; opacity: 1;}
+
+.inner-charter .charter-sum {margin-top: 25px}
+.charter-sum img {height: auto;}
+
+/* tablet - iPad */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+	
+	header, footer {display: none;}
+	/* 공통요소 */
+	article {width: 85%; margin: 0 auto;}
+	h2 {font-size: 60px; font-weight: 400; line-height: 1.2;}
+	p {font-size: 19px; font-weight: 300; line-height: 1.5;}
+	
+	/* section intro */
+	.intro-tbox {width: 100%; margin-top: 300px; text-align: center; color: #fff;}
+	.intro-tbox:after {content: ''; display: block; border-left: solid 1px #fff; height: 170px; margin: 100px 50% 0;}
+	
+	/* section info */
+	.info-tbox > h2 {font-size: 50px; padding: 15px 0 40px;}
+	.icon > div {position: relative; float: left; width: 30%; margin-right: 5%; height: 280px; background: #fff; box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.3); background-repeat: no-repeat; background-size: 80px; background-position: top 20% left 50%;}
+	.icon span {position: absolute; bottom: 18%; left: 50%; transform: translateX(-50%); font-size: 50px; font-weight: 400; padding: 30px 0;}
+	.icon p {position: absolute; width: 100%; bottom: 10%; left: 50%; transform: translateX(-50%); font-size: 25px; font-weight: 300;}
+	
