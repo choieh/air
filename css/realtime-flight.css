@@ -3,166 +3,202 @@
   background: #ed6978;
 }
 
-
 /*.top-content*/
-.top-content {width: 100%; height: 270px; border-bottom: 1px solid #009afa; background: url(../img/realtime-flight/bg_top_content.png) no-repeat bottom center / 1280px;}
-.top-content > div {position: relative; width: 1280px; height: 270px; margin: auto; text-align: center;}
-.top-content > div h2 {position: absolute; top: 40%; left: 50%; transform: translateX(-50%); font-size: 32px; font-weight: 700; color: #000;}
-.top-content > div p {position: absolute; top: 55%; bottom: 50%; transform: translateX(-50%); left: 50%; color: #424242;}
+.top-content {width: 100%; height: 150px; border-bottom: 1px solid #009afa; background: url(../img/realtime-flight/bg_top_content.png) no-repeat bottom center / contain; color: #424242}
+.top-content > div {position: relative; width: 100%; height: 100%; text-align: center;}
+.top-content > div h2 {position: absolute; top: 30%; left: 50%; transform: translateX(-50%); font-size: 26px;}
+.top-content > div p {position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); line-height: 1.4; font-size: 14px;}
 
 /*.content-.content-tab*/
-.content {width: 100%; margin: 40px 0 80px;}
-.content .content-tab {width: 1280px; height: 240px; margin: 0 auto;}
-.tab {width: 100%; height: 70px;}
-.tab a {float: left; width: 50%; font-size: 20px; text-align: center; border: 1px solid #d8d8d8;}
-.tab a {border-bottom: none;}
-.tab a:nth-child(1) {height: 70px; line-height: 70px; color: #009afa;}
-.tab a:nth-child(2) {background: #d8d8d8; height: 60px; margin-top: 10px; line-height: 60px;}
-.tab a i {margin-right: 10px;}
-
-.content-tab > .outline {width: 100%; height: 170px; padding: 20px 20px 10px; border: 1px solid #d8d8d8;}
-.content-tab > .outline {border-top: none;}
-.outline > p {line-height: 1.4;}
+.content {margin: 20px 0 40px;}
+.content .content-tab {width: 100%; height: 380px; margin: 0 auto;}
+.content .content-tab > .outline {height: auto;}
+.tab {overflow: hidden; width: 95%; margin: 0 auto;}
+.tab a {float: left; width: 50%; height: 100%; margin-top: 10px; font-size: 14px; line-height: 40px; text-align: center; background: #d8d8d8; border: 1px solid #d8d8d8; border-bottom: none;}
+.tab a.on {height: 50px; line-height: 50px; color: #009afa; margin-top: 0; background-color: #fff;}
+.content-tab > .outline {width: 100%; height: 170px; padding: 20px 20px 20px;}
+.outline > p {font-size: 12px; line-height: 1.4;}
 
 /*sarch-form*/
-.search {overflow: hidden; position: relative; width: 1240px;}
+.search {position: relative; width: 100%; overflow: hidden; border-collapse: collapse;}
 .search legend {text-indent: -9999px;}
-.search select, .search input {display: block; float: left; width: 150px; height: 50px; padding: 5px 10px; border: 1px solid rgba(0, 154, 250, 0.3); vertical-align: middle;}
-.search input {padding: 0 20px;}
-.search select:nth-of-type(3) {margin-left: 20px;}
-.search select:nth-of-type(3), .search select:nth-of-type(4) {width: 200px;}
-.search .flight-name {width: 300px; }
-.search .flight-date {width: 200px; margin-left: 20px;}
-
+.search select, .search input {display: block; float: left; width: 50%; height: 50px; padding: 5px 10px; border: 1px solid rgba(0, 154, 250, 0.3); vertical-align: middle; color: #7a7a7a}
+.search select:nth-of-type(1) {width: 100%;}
+.search select:nth-of-type(3) {margin-left: 0;}
+.search select:nth-of-type(3), .search select:nth-of-type(4) {width: 50%;}
+.search .flight-name {width: 100%;}
+.search .flight-date {width: 50%;}
+.search .fa-calendar-alt {position: absolute; display: inline-block; width: 10px; height: 10px; left: 130px; top: 80px;}
+.search .fa-search {position: absolute; bottom: 15px; right: 14px;}
 .search i {color: #009afa;}
-.search .btn-calendar {position: relative; width: 200px; height: 50px; left: 335px; line-height: 50px; color: #009afa}
-.search .btn-calendar:after {display: inline-block; position: absolute; content: '\f073'; font-family: 'Font Awesome 5 Free'; font-weight: 600;}
-.search .btn-search {display: block; position: absolute; bottom: 10px; right: 15px; padding: 5px;}
 
 /*.content-.flight-list*/
-.flight-list {width: 1280px; margin: 0 auto; padding: 30px 20px 20px;}
+.flight-list {width: 100%; margin: 0 auto; padding: 0 20px;}
 .flight-list .update {overflow: hidden; width: 100%;}
-.update p {float: left; font-size: 15px; color: #424242; margin-top: 10px;}
-.update a {float: right; padding: 5px 10px; font-size: 15px; color: #424242; border: 1px solid #d8d8d8; border-radius: 15px;}
+.update p {float: left; font-size: 12px; color: #424242; margin-top: 10px;}
+.update a {float: right; padding: 5px 5px; font-size: 12px; color: #424242; border: 1px solid #d8d8d8; border-radius: 50%;}
 
-.list {overflow: hidden; width: 1240px; margin-top: 10px;}
-.list > li {overflow: hidden; width: 100%; border-bottom: 1px dashed #d8d8d8; transition: all 0.3s;}
+.list {overflow: hidden; width: 100%; margin-top: 10px;}
+.list > li {overflow: hidden; width: 100%; transition: all 0.3s;}
 
-.list .list-header {height: 60px; color: #fff; border: none; margin-bottom: 10px;}
+.list .list-header {height: 60px; color: #fff; border: none; display: none;}
 .list .list-header li {float: left; text-align: center; line-height: 60px;}
 
-.li {display: block; width: 100%;}
+.li {display: block; width: 100%; margin-top: 10px; border: 1px solid #d8d8d8; border-top: 3px solid #009afa}
 .li ul {width: 100%; overflow: hidden;}
-.li ul li {float: left; text-align: center; line-height: 80px;}
-.list > li.on {margin-bottom: 10px;}
+.li ul li {float: left; text-align: center; line-height: 50px;}
 
 /*list width*/
-.list ul li:nth-child(1), .list ul li:nth-child(2) {width: 150px;}
-.list ul li:nth-child(3) {width: 320px;}
-.list ul li:nth-child(4) {width: 130px;}
-.list ul li:nth-child(5) {width: 200px;}
-.list ul li:nth-child(6) {width: 100px;}
-.list ul li:nth-child(7) {width: 190px;}
+.list ul li {width: 50%; padding: 0 4%;}
+.list ul li:nth-child(1) {text-align: left;}
+.list ul li:nth-child(2) {text-align: right;}
+.list ul li:nth-child(3) {width: 40%; text-align: left;}
+.list ul li:nth-child(4) {width: 20%;}
+.list ul li:nth-child(5), .list ul li:nth-child(6) {width: 33.3333%; display: none;}
+.list ul li:nth-child(7) {width: 40%; text-align: right;}
+
 /*list border, bg*/
-.list > li:nth-child(odd) {background-color: #f7f7f7;}
 .list > li:nth-child(1) {background-color: #009afa;}
 .list > li:nth-child(2) {border-top: 1px solid #d8d8d8;}
-.list > li:last-child {border-bottom: 1px solid #d8d8d8;}
 
-.li:hover, .li:focus, .list > li.on {background: rgba(66, 66, 66, 0.8); color: #fff;}
+.li:hover, .li:focus, .list > li.on a {background: rgba(66, 66, 66, 0.8); color: #fff;}
 
 /*.list li - status*/
-.li .status { padding-left: 55px; text-align: left;}
-.status:before {content: ''; display: inline-block; width: 10px; height: 10px; margin-right: 10px; border-radius: 50%; background: #30BA40}
-li:nth-child(2) .status:before {background: #30BA40;}
-li:nth-child(3) .status:before {background: #FF6A19;}
-li:nth-child(4) .status:before {background: #F7CB2A;}
-li:nth-child(5) .status:before {background: #5165E8;}
-li:nth-child(6) .status:before {background: #5165E8;}
-li:nth-child(7) .status:before {background: #DE1D10;}
-li:nth-child(8) .status:before {background: #5165E8;}
-li:nth-child(9) .status:before {background: #5165E8;}
-li:nth-child(10) .status:before {background: #5165E8;}
+/*.li .status { padding-right: 20px;}*/
+.status:after {content: ''; display: inline-block; width: 10px; height: 10px; margin-left: 10px; border-radius: 50%; background: #30BA40}
+li:nth-child(2) .status:after {background: #30BA40;}
+li:nth-child(3) .status:after {background: #FF6A19;}
+li:nth-child(4) .status:after {background: #F7CB2A;}
+li:nth-child(5) .status:after {background: #5165E8;}
+li:nth-child(6) .status:after {background: #5165E8;}
+li:nth-child(7) .status:after {background: #DE1D10;}
+li:nth-child(8) .status:after {background: #5165E8;}
+li:nth-child(9) .status:after {background: #5165E8;}
+li:nth-child(10) .status:after {background: #5165E8;}
 
 /*detail*/
-.detail {width: 100%; height: 300px; background: url(../img/realtime-flight/bg_detail.png) no-repeat center / cover; color: #fff; display: none;}
-.detail > div {float: left;}
+.detail {width: 100%; height: auto; font-size: 14px; background: url(../img/realtime-flight/bg_detail.png) no-repeat center / auto 550px; color: #fff; display: none;}
 
-.center {width: 140px; height: 100%; text-align: center;}
-.center p {width: 100%; height: 75px; padding: 10px; line-height: 1.7;}
-.center:before, .center:after {content: ''; display: inline-block; height: 90px; margin: 10px 0; border: 0.5px solid rgba(239, 239, 239, 0.2);}
+.departure, .arrive {width: 100%; padding: 2% 4%;}
 
-.departure, .arrive {width: 550px; height: 100%; padding: 0 40px;}
+.center {width: 100%; height: auto; text-align: center; overflow: hidden;}
+.center p {float: left; width: 30%; padding: 10px; line-height: 1.4; font-size: 14px; font-weight: 300; margin: 0 auto;}
+.center:before, .center:after {float: left; content: ''; display: inline-block; width: 30%; margin: 30px 2%; border: 0.5px solid rgba(239, 239, 239, 0.2);}
 
-.inner-detail div:nth-child(2) {height: 100px; padding-top: 20px;}
-.inner-detail div:nth-child(3) {height: 120px; padding-top: 20px;}
-
-.inner-detail div {overflow: hidden; width: 100%;}
-.inner-detail div p, .inner-detail > div strong {float: left;}
-.inner-detail strong {width: 250px; color: #fce804; font-size: 32px; font-weight: 500; text-align: center;}
-.inner-detail p {width: 110px; font-size: 15px; line-height: 1.4;}
-.inner-detail p:last-child {text-align: center;}
-
+.detail h3 {height: 40px; font-weight: 400; line-height: 40px; text-align: center;}
 .detail span {display: block;}
-.detail h3 {height: 80px; font-size: 22px; font-weight: 500; line-height: 80px; text-align: center;}
+
+.inner-detail div:nth-child(3) {margin-top: 5px; padding: 10px 0;}
+
+.inner-detail div {overflow: hidden;}
+.inner-detail div p, .inner-detail > div strong {float: left;}
+.inner-detail strong {width: 40%; color: #fce804; font-size: 20px; font-weight: 500; text-align: center; line-height: 2;}
+.inner-detail p {width: 30%; font-size: 14px; line-height: 1.4;}
+.inner-detail p:last-child {text-align: center;}
+.inner-detail b, .center b {font-weight: 300;}
+
 
 /*위에 .list ul li 가 선언된 내용 때문에 width값이 적용 안되던 문제 때문에
 클래스명을 추가로 붙여서 우선순위 값을 높여서 적용.*/
-.detail .departure div ul {width: 100%; height: 100%;}
-.detail .departure div ul li {float: left; line-height: 1.7; text-align: center;}
+.detail .departure div ul li {float: left; line-height: 1.5; font-weight: 300; text-align: center; padding: 0;}
 .detail .departure div ul li:nth-child(1) {width: 35%; text-align: left;}
-.detail .departure div ul li:nth-child(2) {width: 35%;}
-.detail .departure div ul li:nth-child(3) {width: 15%;}
-.detail .departure div ul li:nth-child(4) {width: 15%;}
+.detail .departure div ul li:nth-child(2) {width: 30%;}
+.detail .departure div ul li:nth-child(3) {width: 17.5%;}
+.detail .departure div ul li:nth-child(4) {width: 17.5%;}
 
-.detail .arrive div ul {width: 100%; height: 100%;}
-.detail .arrive div ul li {float: left; width: 50%; line-height: 1.7;}
-.detail .arrive div ul li:last-child {text-align: center; padding-left: 150px;}
+.detail .arrive div ul li {float: left; width: 80%; line-height: 1.4; font-weight: 300; padding: 0;}
+.detail .arrive div ul li:last-child {width: 20%; text-align: center;}
 
 /*weather*/
-.detail .fas {font-size: 30px; margin-left: 2px;}
+.detail .fas {font-size: 24px; margin-left: 5px;}
 
 /*btn-more*/
-.btn-more {display: block; width: 150px; height: 50px; margin: 20px auto 0; padding: 10px 15px; font-size: 20px; color: #000;}
+.btn-more {display: none; width: 150px; height: 50px; margin: 20px auto 0; padding: 10px 15px; font-size: 20px; color: #000;}
 
-
-
-/* mobile - iPhoneX */
-@media screen and (max-width: 375px) {
-	/*.top-content*/
-	.top-content {background-size: cover; height: 150px;}
-	.top-content > div {width: 100%; height: 100%;}
-	.top-content > div h2 {top: 30%; font-size: 26px;}
-	.top-content > div p {top: 50%; line-height: 1.4; font-size: 14px;}
-	
-	/*.content-.content-tab*/
-	.content {margin: 20px 0 40px;}
-	.content .content-tab {width: 100%; height: 330px;}
-	.content-tab > .outline {height: 100%;}
-	.tab {width: 100%; height: 70px;}
-	.tab a {font-size: 16px;}
-	.tab a:nth-child(1) {height: 70px; line-height: 70px;}
-	.tab a:nth-child(2) {height: 60px;line-height: 60px;}
-	/*높이 결정하기..javascript에서도 반응형에서 줄어드는 사이즈 지정가능한지 ??? */
-/*	.outline {height: 100%;}*/
-	.outline > p {font-size: 14px;}
-	
-	/*sarch-form*/
-	.search {width: 100%;}
-	.search select, .search input {width: 50%;}
-	.search select:nth-of-type(1) {width: 100%;}
-	.search select:nth-of-type(3) {margin-left: 0;}
-	.search select:nth-of-type(3), .search select:nth-of-type(4) {width: 50%;}
-	.search .flight-name {width: 100%;}
-	.search .flight-date {width: 50%; margin-left: 0;}
-
-	.search .fa-calendar-alt {left: 335px; line-height: 50px;}
-	.search .fa-search {position: absolute; bottom: 10px; right: 20px; line-height: 50px;}
-	
-	
-}
 
 /* tablet - iPad */
-@media screen and (min-width: 376px) and (max-width: 768px) {
-	
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+	/*detail*/
+	.detail {font-size: 16px;}
+	.center {padding-left: 1.5%}
+	.center p {font-size: 16px;}
+	.inner-detail p:last-child {padding-left: 15%;}
+	.detail .arrive div ul li:last-child {padding-left: 3%;}
 }
+
+/* PC - 1280px 이상 */
+@media screen and (min-width:1280px) {
+	#wrap {box-sizing: border-box;}
+	.top-content {height: 270px;}
+	.top-content > div h2 {top: 40%; font-size: 32px; font-weight: 700;}
+	.top-content > div p {top: 55%;}
+
+	/*.content-tab*/
+	.tab {width: 1280px;}
+	.content .content-tab {height: 240px;}
+	.content-tab > .outline {width: 1280px; height: 170px; margin: 0 auto; border: 1px solid #d8d8d8; border-top: none;}
+	/*search-form*/
+	.search select, .search input {width: 150px; padding: 5px 10px;}
+	.search select:nth-of-type(1) {width: 150px;}
+	.search select:nth-of-type(3) {margin-left: 18px;}
+	.search select:nth-of-type(3), .search select:nth-of-type(4) {width: 200px;}
+	.search .flight-name {width: 300px; }
+	.search .flight-date {width: 200px; margin-left: 18px;}
+	.search .fa-calendar-alt {left: 337px; top: 32px;}
+
+	/*.content-.flight-list*/
+	.flight-list {width: 1280px;}
+	.list .list-header {display: block;}
+
+	/*list width*/
+	.li ul {width: 1240px; height: 80px;}
+	.list > li {/*height: 80px;*/ border-bottom: 1px dashed #d8d8d8;}
+	.list ul li {height: 80px; padding: 0; line-height: 80px;}
+	.list ul li:nth-child(1), .list ul li:nth-child(2) {width: 150px; text-align: center;}
+	.list ul li:nth-child(3) {width: 320px; text-align: center;}
+	.list ul li:nth-child(4) {width: 130px;}
+	.list ul li:nth-child(5) {width: 200px; display: block;}
+	.list ul li:nth-child(6) {width: 100px; display: block;}
+	.list ul li:nth-child(7) {width: 190px; text-align: center;}
+	
+	/*list border, bg*/
+	.li {height: 100%; border: none; margin-top: 0;}
+	.list > li:nth-child(odd) {background-color: #f7f7f7;}
+	.list > li:nth-child(1) {background-color: #009afa;}
+	.list > li:last-child {border-bottom: 1px solid #d8d8d8;}
+	
+	/*detail*/
+	.detail {height: 300px; background-size: cover;}
+	.detail > div {float: left;}
+
+	.center {width: 120px; height: 100%; text-align: center;}
+	.center p {width: 100%; height: 75px; padding: 10px; line-height: 1.8;}
+	.center:before, .center:after {content: ''; display: block; width: 0; height: 90px; margin: 10px 50%; border: 0.5px solid rgba(239, 239, 239, 0.2);}
+
+	.departure, .arrive {width: 560px; height: 100%; padding: 0 20px;}
+
+	.inner-detail div:nth-child(2) {height: 100px; padding-top: 20px;}
+	.inner-detail div:nth-child(3) {height: 120px; padding-top: 20px;}
+
+	.inner-detail strong {width: 270px; font-size: 32px;}
+	.inner-detail p {width: 125px; font-size: 16px; line-height: 1.8;}
+
+	.detail {font-size: 16px;}
+	.detail h3 {height: 80px; font-size: 22px; line-height: 80px;}
+
+	.detail .departure div ul li {float: left; line-height: 1.7; text-align: center;}
+	.detail .departure div ul li:nth-child(1) {width: 33%; text-align: left;}
+	.detail .departure div ul li:nth-child(2) {width: 35%;}
+	.detail .departure div ul li:nth-child(3) {width: 16%;}
+	.detail .departure div ul li:nth-child(4) {width: 16%;}
+
+	.detail .arrive div ul {width: 100%; height: 100%;}
+	.detail .arrive div ul li {float: left; text-align: left; width: 40%; line-height: 1.7;}
+	.detail .arrive div ul li:last-child {width: 60%; padding-left: 180px;}
+}
+
+
+
+
+
+
