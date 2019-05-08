@@ -9,12 +9,12 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/header-footer.css">
+	<link rel="stylesheet" href="css/header-footer-index.css">
 	<link rel="stylesheet" href="css/airport-info.css">
 
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/header.js"></script>
+	<script src="js/header-mobile.js"></script>
 	<script src="js/airport-info.js"></script>
 </head>
 
@@ -223,29 +223,88 @@
 
 		<!--footer-->
 		<footer>
-			<div class="inner-footer">
-				<div class="info-cs">
-					<p class="cs">
-						고객센터 <span>│</span><span>1577-1600</span>
-					</p>
+            <div class="inner-footer">
+               <ul class="lnb clear">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">항공안전신고</a></li>
+                    <li><a href="#">저작권보호정책</a></li>
+                    <li><a href="#">이메일 주소 무단수집 거부</a></li>
+                    <li><a href="#">시각장애인이용안내</a></li>
+                </ul>
+                <div class="inner-info">
+                    <p class="cs">
+                        고객센터 <span>│</span><span>1577-1600</span>
+                    </p>
+                    
+                    <div class="info-copy">
+                        <address>에어국제공항 제1여객터미널:22382 인천시 중구 공항로 272</address>
+                        <p>&copy;Air Internaional Airport Corporation. All rights reserved.</p>
+                    </div>
+                </div>
 
-					<div class="info-copy">
-						<address>에어국제공항 제1여객터미널:22382 인천시 중구 공항로 272</address>
-						<p>&copy;Air Internaional Airport Corporation. All rights reserved.</p>
-					</div>
-				</div>
-
-				<ul class="lnb clear">
-					<li><a href="#">이용약관</a></li>
-					<li><a href="#">개인정보처리방침</a></li>
-					<li><a href="#">항공안전신고</a></li>
-					<li><a href="#">저작권보호정책</a></li>
-					<li><a href="#">이메일 주소 무단수집 거부</a></li>
-					<li><a href="#">시각장애인이용안내</a></li>
-				</ul>
-			</div>
-			<!--//.inner-footer-->
-		</footer>
+                
+            </div>
+            <!--//.inner-footer-->
+        </footer>
+        
+        
+        
+        <aside id="quick">
+            <ul class="quick-menu-list">
+                <li class="quick-menu-list-item">
+                    <a href="#" class="quick-menu-list-link my-terminal">
+                        <span>내 터미널<br>확인하기</span>
+                    </a>
+                </li>
+                <li class="quick-menu-list-item">
+                    <a href="#" class="quick-menu-list-link view-airport">
+                        <span>공항<br>한눈에 보기</span>
+                    </a>
+                </li>
+                <li class="quick-menu-list-item">
+                    <a href="#" class="quick-menu-list-link road-map">
+                        <span>오시는 길</span>
+                    </a>
+                </li>
+                <li class="quick-menu-list-item">
+                    <a href="#" class="quick-menu-list-link top">
+                       <span>TOP</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="quick-btn"><span>닫기</span></a>
+        </aside><!--//aside#quick-->
+        
+        <div class="modal">
+           <div class="inner-modal modal-my-terminal">
+              <div class="close">
+                  <a href="#">닫기</a>
+              </div>
+               <p class="m-title">check your terminal</p>
+               <form>
+                   <input type="text" placeholder="항공편명을 입력하세요." class="m-input">
+                   <a href="#" class="submit">확인</a>
+               </form>
+               <p class="desc">항공편명을 입력하시면 이용하실 터미널을 알려드립니다.</p>
+           </div>
+           
+           <div class="inner-modal modal-view-airport">
+               <div class="close">
+                  <a href="#">닫기</a>
+              </div>
+              <div class="inner-modal-content"></div>
+           </div>
+           <div class="inner-modal modal-road-map">
+               <div class="close">
+                  <a href="#">닫기</a>
+              </div>
+              <div class="inner-modal-content"></div>
+           </div>
+           
+           <div class="modal-close-bg"></div>
+           
+        </div><!--.modal-->
 	</div>
 
 </body>
