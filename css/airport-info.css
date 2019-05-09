@@ -94,7 +94,6 @@ section:nth-child(5) {background: #eee;}
 /* tablet - iPad */
 @media screen and (min-width: 376px) and (max-width: 768px) {
 	
-	header, footer {display: none;}
 	/* 공통요소 */
 	article {width: 85%; margin: 0 auto;}
 	h2 {font-size: 60px; font-weight: 400; line-height: 1.2;}
