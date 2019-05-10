@@ -38,7 +38,7 @@ header {
     overflow: hidden;
     text-shadow: none;
     color: transparent;
-    background: #0099ff url(../img/index/m-index/logo-m.png) no-repeat center/ 40px;
+    background: #0099ff url(../img/index/logo.png) no-repeat center/ 40px;
 }
 
 /*트리거메뉴_애니메이션*/
@@ -414,7 +414,7 @@ address,
     text-shadow: none;
     color: transparent;
     /*    background: url(../img/index/m-index/add-w.png) no-repeat center / 45%;*/
-    background: url(../img/index/m-index/add-b.png) no-repeat center / 45%;
+    background: url(../img/index/logo-m.png) no-repeat center / 45%;
 }
 
 
@@ -917,39 +917,3 @@ address,
     
 
 }/*-----1280px*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**/
-
