@@ -101,6 +101,23 @@ h3{margin-top: 220px; font: 28px 'Noto Sans KR Regular', 'sans-serif'; color: #4
     .content{padding: 0 30px;}
     .tab{font-size: 14px;}
     
+    /* Content - Route */
+    .inner-bg i{font-size: 6px; margin: 0 5px;}
+    
+    .entran .inner-bg:nth-child(1){left: 10%;}
+    .entran .inner-bg:nth-child(2){left: 27.5%;}
+    .entran .inner-bg:nth-child(3){left: 44.5%;}
+    .entran .inner-bg:nth-child(4){left: 61.5%;}
+    .entran .inner-bg:nth-child(5){left: 78.5%;}
+    
+    .depart .inner-bg{top: 47%; transform: translateY(-50%);}
+    .depart .inner-bg:nth-child(1){left: 8.5%;}
+    .depart .inner-bg:nth-child(2){left: 22.5%;}
+    .depart .inner-bg:nth-child(3){left: 37%;}
+    .depart .inner-bg:nth-child(4){left: 51%;}
+    .depart .inner-bg:nth-child(5){left: 65.5%;}
+    .depart .inner-bg:nth-child(6){left: 80%;}
+    
     /* Content - PS Content */
     .ps-content{width: 46%;}
     .route{width: 100%; background-size: contain;}
