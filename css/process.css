@@ -21,8 +21,35 @@ section{width: 1280px; margin: 0 auto;}
 .tab i:before{margin-right: 15px;}
 
 /* Content - Route */
-.route{width: 100%; height: 400px; background: url(../img/process/img_route_entran.png) no-repeat center;}
+.route{position: relative; width: 100%; height: 400px; background: url(../img/process/img_route_entran.png) no-repeat center; z-index: -1;}
 .depart .route{background-image: url(../img/process/img_route_depart.png)}
+.route-bg {color: #d8d8d8; transition: all 0.5s ease 0.2s;}
+.entran .inner-bg{position: absolute; top: 49%; transform: translateY(-50%);}
+.entran .inner-bg:nth-child(1){left: 16.5%;}
+.entran .inner-bg:nth-child(2){left: 31%;}
+.entran .inner-bg:nth-child(3){left: 45.5%;}
+.entran .inner-bg:nth-child(4){left: 60%;}
+.entran .inner-bg:nth-child(5){left: 75%;}
+
+.depart .inner-bg{position: absolute; top: 46%; transform: translateY(-50%);}
+.depart .inner-bg:nth-child(1){left: 15%;}
+.depart .inner-bg:nth-child(2){left: 27%;}
+.depart .inner-bg:nth-child(3){left: 39%;}
+.depart .inner-bg:nth-child(4){left: 51.5%;}
+.depart .inner-bg:nth-child(5){left: 63.5%;}
+.depart .inner-bg:nth-child(6){left: 75.5%;}
+
+.inner-bg i{font-size: 10px; margin: 0 10px;}
+.inner-bg i:nth-child(1){animation: dot-ani linear 3s 0.3s infinite;}
+.inner-bg i:nth-child(2){animation: dot-ani linear 3s 0.6s infinite;}
+.inner-bg i:nth-child(3){animation: dot-ani linear 3s 0.9s infinite;}
+.inner-bg i:nth-child(4){animation: dot-ani linear 3s 1.2s infinite;}
+.inner-bg i:nth-child(5){animation: dot-ani linear 3s 1.5s infinite;}
+@keyframes dot-ani {
+    0% {transform: scale(0.5); opacity: 0.5}
+    50% {transform: scale(0.7); opacity: 0.9}
+    100% {transform: scale(1); opacity: 1.2}
+}
 
 /* Content - ps list 공통 속성 */
 .depart {display: none;}
