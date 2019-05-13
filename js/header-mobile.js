@@ -52,12 +52,11 @@ $(document).ready(function () {
     
     /*quick*/
     /*퀵메뉴 버튼 클릭시*/
-    $(".quick-btn").click(function(e){
+    $(".quick-btn, .quick-bg").click(function(e){
         e.preventDefault(); /*a링크 이동 해제*/
-        $("#quick").toggleClass("quick-before"); /*퀵메뉴 배경 toggle*/
+        $(".quick-bg").toggleClass("on"); /*퀵메뉴 배경 toggle*/
         $(".quick-menu-list").fadeToggle(); /*퀵메뉴 리스트 fadeToggle*/
         $(".quick-btn").toggleClass("rotate"); /*퀵메뉴 버튼 회전*/
-        
     });
     
     /*modal*/
@@ -65,8 +64,6 @@ $(document).ready(function () {
     $(".quick-menu-list-item").on("click",function(){
         /*현재 클릭한 리스트 번호*/
         var index = $(this).index();
-        
-        console.log(index);
         
         /*modal이 보여진다*/
         $(".modal").addClass("show"); 
@@ -91,6 +88,7 @@ $(document).ready(function () {
     $(".close , .modal-close-bg").on("click",function(){
         $(".modal").removeClass("show"); /*modal이 닫힌다.*/
     });
+    
 
 });
 
