@@ -179,9 +179,9 @@ section:nth-child(5) {background: #eee;}
 	.inner-since .airplane-img img {max-width: none; width: 150%;}
 	
 	/* section ci */
-	#ci {height: 690px; padding-top: 50px;}
+	#ci {height: 640px; padding-top: 50px;}
 	.inner-ci-left {width: 100%; padding: 0;}
-	.inner-ci-left > h2 {font-size: 35px; padding: 20px 0 30px;}
+	.inner-ci-left > h2 {font-size: 29px; padding: 20px 0 30px;}
 	.inner-ci-left > p {color: #888; font-size: 18px;}
 	.inner-ci-left > p > br {display: none;}
 	.inner-ci-left .ci-sub-title {padding: 20px 0 10px 0;}
