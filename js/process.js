@@ -12,24 +12,23 @@ $(document).ready(function() {
           //초기화
           $('div.tab a').removeClass('on');
           $('div.tab a').css({
-             'color': '#000',
-             'line-height': '60px',
-             'height': '60px',
-             'margin-top': '10px',
+             'color': '#424242',
+             'line-height': '40px',
+             'height': '41px',
+             'margin-top': '9px',
              'background': '#d8d8d8',
-             'border' : 'none',
-             'border-bottom' : '1px solid #7a7a7a', 
+             'border': 'none'
          });  
           
           //선택적용
           $(this).addClass('on');
           $('div.tab a:nth-child('+ (idx + 1) + ')').css({
              'color': '#009afa',
-             'line-height': '70px',
-             'height': '70px',
+             'line-height': '50px',
+             'height': '50px',
              'margin-top': '0',
              'background': 'none',
-             'border' : '1px solid #7a7a7a',
+             'border' : '1px solid #d8d8d8',
              'border-bottom' : 'none'
          });   
       } 
@@ -40,24 +39,23 @@ $(document).ready(function() {
           //초기화
           $('div.tab a').removeClass('on');
           $('div.tab a').css({
-             'color': '#000',
-             'line-height': '60px',
-             'height': '60px',
-             'margin-top': '10px',
+             'color': '#424242',
+             'line-height': '40px',
+             'height': '41px',
+             'margin-top': '9px',
              'background': '#d8d8d8',
-             'border' : 'none',
-             'border-bottom' : '1px solid #7a7a7a', 
+             'border' : 'none'
          });  
           
           //선택적용
           $(this).addClass('on');
           $('div.tab a:nth-child('+ (idx + 1) + ')').css({
              'color': '#009afa',
-             'line-height': '70px',
-             'height': '70px',
+             'line-height': '50px',
+             'height': '50px',
              'margin-top': '0',
              'background': 'none',
-             'border' : '1px solid #7a7a7a',
+             'border' : '1px solid #d8d8d8',
              'border-bottom' : 'none'
          }); 
       }  
