@@ -14,7 +14,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: #0099ff;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -38,7 +38,7 @@ header {
     overflow: hidden;
     text-shadow: none;
     color: transparent;
-    background: #0099ff url(../img/index/logo.png) no-repeat center/ 40px;
+    background: #0099ff url(../img/index/m-index/logo-m.png) no-repeat center/ 40px;
 }
 
 /*트리거메뉴_애니메이션*/
@@ -55,7 +55,7 @@ header {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    z-index: 2000;
+    z-index: 4000;
 }
 
 .nav-bar .item {
@@ -301,16 +301,21 @@ address,
 
 
 /*#quick*/
-.quick-before::before {
+.quick-bg {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    content: '';
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.9);
     z-index: -1;
 }
+
+.quick-bg.on{
+    display: block;
+}
+
 
 #quick {
     position: fixed;
@@ -414,7 +419,7 @@ address,
     text-shadow: none;
     color: transparent;
     /*    background: url(../img/index/m-index/add-w.png) no-repeat center / 45%;*/
-    background: url(../img/index/logo-m.png) no-repeat center / 45%;
+    background: url(../img/index/m-index/add-b.png) no-repeat center / 45%;
 }
 
 
@@ -498,7 +503,7 @@ address,
 
 .modal-my-terminal form > .submit {
     display: block;
-    padding: 15px 0;
+    padding: 10px 0;
     text-align: center;
     color: #fff;
     background-color: #265B7F;
@@ -507,7 +512,7 @@ address,
 .modal-my-terminal .desc {
     width: 90%;
     margin: 0 auto;
-    color: #fff;
+    color: #fce804;
     /*    font-size: 18px;*/
     font-size: 1.125em;
     line-height: 20px;
@@ -771,7 +776,7 @@ address,
     transform: translateY(50%);
     background-color: #222;
     border-radius: 15px 0 0 15px;
-    z-index: 3000;
+    z-index: 4000;
 }
 
 .quick-menu-list {
@@ -887,12 +892,6 @@ address,
     
     
 /*footer*/
-    footer{
-/*        display: none;*/
-        height: 100%;
-        padding-top: 50px;
-        box-sizing: border-box;
-    }    
     
 .inner-footer {
     width: 1280px;
@@ -907,8 +906,8 @@ address,
 .lnb li a,    
 address,
 .info-copy > p {
-    /*    font-size: 18px;*/
-    font-size: 1.125em;
+    /*    font-size: 15px;*/
+    font-size: 0.9375em;
 }
     
 .lnb li:hover{
@@ -917,3 +916,39 @@ address,
     
 
 }/*-----1280px*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
+
