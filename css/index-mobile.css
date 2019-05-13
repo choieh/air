@@ -156,7 +156,9 @@ main {
     margin-bottom: 30px;
 }
 
-.flight-form h3 {}
+.flight-form h3 {
+    margin-bottom:10px;
+}
 
 
 .flight-form select {
