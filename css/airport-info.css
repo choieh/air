@@ -47,7 +47,7 @@ section:nth-child(3) {background: #eee;}
 .inner-tbox .sky {font-weight: 500; color: #009afa;}
 
 .year-box {position: absolute; top: 50%; transform: translateY(-50%); width: 100%; margin-top: 100px;}
-.year-box > p {font-size: 450px; font-weight: 500; line-height: 1;}
+.year-box > p {font-size: 400px; font-weight: 500; line-height: 1;}
 .year-box .year-left {float: left; margin-left: -15px; height: auto;}
 .year-box .year-right {float: right; margin-right: -20px; height: auto; overflow: hidden;}
 
