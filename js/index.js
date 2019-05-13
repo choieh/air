@@ -1,31 +1,5 @@
 $(document).ready(function () {
 
-    /*footer - 스크롤 내렸을시 footer가 보인다.*/
-
-    /*$(window).scroll(function () {
-
-        var docHeight = $(this).height();
-        var current = $(this).scrollTop() + $(window).height();
-
-        var currentScroll = parseInt(current);
-
-             console.log("docHeight : "+docHeight + "/ currentScroll : " + currentScroll );
-
-
-        if (docHeight < currentScroll) {
-            $("footer").slideDown("fast");
-
-        } else {
-            $("footer").slideUp("fast");
-            $("main").css({
-                "margin-bottom": 150
-            });
-        }
-
-        docHeight = currentScroll;
-
-    });*/
-
 
     /*출발,도착 버튼 선택시 font color 변경*/
     $(".flight-btn > a").click(function (e) {
@@ -53,7 +27,7 @@ $(document).ready(function () {
 
 
     /*닫기버튼 클릭시 검색결과 slideDown()*/
-    $(".result-img > .close").click(callback);
+    $(".result-img > .rst-close").click(callback);
     
     
     
