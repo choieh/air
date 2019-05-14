@@ -26,7 +26,7 @@
 	<div id="wrap">
 		<header>
 			<div class="inner-header">
-				<h1 class="logo"><a href="index.html">Air National Airport</a></h1>
+				<h1 class="logo"><a href="#">Air National Airport</a></h1>
 				<!--트리거버튼-->
 				<a href="#" class="nav-bar">
 					<span class="item"></span>
@@ -42,7 +42,7 @@
 					</div>
 					<div class="gnb">
 						<ul class="gnb-list">
-							<li class="menu-on"><a href="realtime-flight.html">운행현황</a>
+							<li class="menu-on"><a href="#">운행현황</a>
 								<div class="sub-menu">
 									<ol class="clear">
 										<li><a href="#">실시간 운행현황</a></li>
@@ -51,9 +51,9 @@
 								</div>
 								<!--//.sub-menu-->
 							</li>
-							<li><a href="process.html">탑승절차</a></li>
+							<li><a href="#">탑승절차</a></li>
 							<li><a href="#">교통/주차</a></li>
-							<li><a href="airport-info.html">공항정보</a></li>
+							<li><a href="#">공항정보</a></li>
 							<li class="menu-on"><a href="#">고객센터</a>
 								<div class="sub-menu service">
 									<ol class="clear">
@@ -71,7 +71,7 @@
 
 					<div class="gnb-web">
 						<ul class="gnb-web-list">
-							<li class="web-menu-on"><a href="realtime-flight.html">운행현황</a>
+							<li class="web-menu-on"><a href="#">운행현황</a>
 								<div class="web-sub-menu time-list">
 									<ol class="clear">
 										<li><a href="#">실시간 운행현황</a></li>
@@ -80,9 +80,9 @@
 								</div>
 								<!--//.sub-menu-->
 							</li>
-							<li><a href="process.html">탑승절차</a></li>
+							<li><a href="#">탑승절차</a></li>
 							<li><a href="#">교통/주차</a></li>
-							<li><a href="airport-info.html">공항정보</a></li>
+							<li><a href="#">공항정보</a></li>
 							<li class="web-menu-on"><a href="#">고객센터</a>
 								<div class="web-sub-menu web-service">
 									<ol class="clear">
@@ -127,7 +127,7 @@
 								<legend>항공편검색</legend>
 
 								<!--https://www.w3schools.com/howto/howto_custom_select.asp-->
-								<select name="terminal">
+								<select name="terminal" class="select-terminal">
 									<option value="terminal00" selected>전체 터미널</option>
 									<option value="terminal01">T1</option>
 									<option value="terminal02">T2</option>
@@ -137,7 +137,7 @@
 								<input type="text" placeholder="YYYY.MM.DD" class="flight-date">
 								<i class="far fa-calendar-alt"></i>
 
-								<select name="time" id="">
+								<select name="time" id="" class="select-time">
 									<option value="time00" selected>전체 시간</option>
 									<option value="time01">09:30 이후</option>
 									<option value="time01">11:30 이후</option>
@@ -147,7 +147,7 @@
 									<option value="time01">19:30 이후</option>
 									<option value="time01">21:30 이후</option>
 								</select>
-								<select name="destination" id="">
+								<select name="destination" id="" class="select-arrive">
 									<option selected disabled hidden>목적지 선택</option>
 									<option value="dtn01">괌</option>
 									<option value="dtn01">교토</option>
@@ -159,7 +159,7 @@
 									<option value="dtn01">프랑크푸르트</option>
 									<option value="dtn01">하와이</option>
 								</select>
-								<select name="airline" id="">
+								<select name="airline" id="" class="select-airline">
 									<option selected disabled hidden>항공사 선택</option>
 									<option value="line01">대한항공</option>
 									<option value="line03">루프트한자</option>
