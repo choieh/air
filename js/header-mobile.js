@@ -51,13 +51,29 @@ $(document).ready(function () {
    
     
     /*quick*/
-    /*퀵메뉴 버튼 클릭시*/
-    $(".quick-btn, .quick-bg").click(function(e){
-        e.preventDefault(); /*a링크 이동 해제*/
-        $(".quick-bg").toggleClass("on"); /*퀵메뉴 배경 toggle*/
+    function makeBg(){
+        $(".quick-btn").after("<div class='quick-bg'></div>");
+    }
+    
+    function quickMenuClose(){
         $(".quick-menu-list").fadeToggle(); /*퀵메뉴 리스트 fadeToggle*/
         $(".quick-btn").toggleClass("rotate"); /*퀵메뉴 버튼 회전*/
+        
+        if($(".quick-bg").hasClass("on")){
+            $(".quick-bg").removeClass("on");/*퀵메뉴 배경 toggle*/    
+        }else{
+            $(".quick-bg").addClass("on");
+        }
+    }
+    
+    /*퀵메뉴 버튼 클릭시*/
+    makeBg();
+    
+    $(".quick-btn, .quick-bg").click(function(e){
+        e.preventDefault(); /*a링크 이동 해제*/
+        quickMenuClose();
     });
+    
     
     /*modal*/
     /*퀵메뉴 리스트 클릭시*/
