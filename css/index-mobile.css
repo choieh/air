@@ -164,6 +164,7 @@ main {
 .flight-form select {
     width: 100%;
     height: 60px;
+    font-size: 1em;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
@@ -172,6 +173,7 @@ main {
 .airline-num > input[type="text"] {
     width: 100%;
     height: 60px;
+    font-size: 1em;
     border-bottom: 1px solid #ccc;
 }
 
