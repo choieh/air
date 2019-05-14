@@ -237,6 +237,8 @@ select::-ms-expand {display:none} /* select 화살표 IE 대응 */
 	.center {width: 10%;}
 	.center p {float: none; width: 100%;}
 	.center:before, .center:after {float: none; display: block; width: 0; height: 35%; margin: 10% auto;}
+	
+	.search select:nth-of-type(1) {background-position: 94%;}
 }
 
 
