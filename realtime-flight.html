@@ -182,10 +182,10 @@
 				<!--//.content-tab-->
 				<article class="flight-list">
 					<div class="update">
-						<p>마지막 업데이트 : 2019.05.02 (목) 16:02</p>
 						<a href="JavaScript:window.location.reload()"><i class="fas fa-redo-alt"></i></a>
+						<p>마지막 업데이트 : 2019.05.02 (목) 16:02</p>
 					</div>
-					<ul class="list">
+					<ul class="inner-flight-list"> <!--.list-->
 						<li class="list-header">
 							<ul>
 								<li>출발시간</li>
@@ -199,7 +199,7 @@
 						</li>
 						<!--//list-header-->
 						<li>
-							<a href="#" class="li">
+							<a href="#" class="flight-info"> <!--.li-->
 								<ul>
 									<li>07 : 35</li>
 									<li>오사카</li>
@@ -211,15 +211,15 @@
 								</ul>
 							</a>
 							<!--datail-->
-							<div class="detail">
-								<div class="inner-detail departure">
+							<div class="flight-detail"> <!--.flight-info-->
+								<div class="inner-flight-info departure">
 									<h3>출발지</h3>
-									<div>
-										<p>대한민국<br>에어국제공항</p>
-										<strong>서울</strong>
-										<p>20/24˚C <i class="fas fa-cloud"></i></p>
+									<div class="info-airline">
+										<p class="airport">대한민국<br>에어국제공항</p>
+										<strong class="city">서울</strong>
+										<p class="weather">20/24˚C <i class="fas fa-cloud"></i></p>
 									</div>
-									<div>
+									<div class="info-detail">
 										<ul>
 											<li>
 												<span>2019. 5. 5 (일)</span>
@@ -246,14 +246,14 @@
 										<b>7시간 00분</b>
 									</p>
 								</div>
-								<div class="inner-detail arrive">
+								<div class="inner-flight-info arrive">
 									<h3>목적지</h3>
-									<div>
-										<p>일본<br>간사이국제공항</p>
-										<strong>오사카</strong>
-										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
+									<div class="info-airline">
+										<p class="airport">일본<br>간사이국제공항</p>
+										<strong class="city">오사카</strong>
+										<p class="weather">15/18˚C <i class="fas fa-cloud-sun"></i></p>
 									</div>
-									<div>
+									<div class="info-detail">
 										<ul>
 											<li>
 												<span>2019. 5. 4 (토)</span>
@@ -269,7 +269,7 @@
 							</div>
 						</li>
 						<li>
-							<a href="#" class="li">
+							<a href="#" class="flight-info">
 								<ul>
 									<li>08 : 40</li>
 									<li>런던</li>
@@ -281,65 +281,9 @@
 								</ul>
 							</a>
 							<!--datail-->
-							<div class="detail">
-								<div class="inner-detail departure">
-									<h3>출발지</h3>
-									<div>
-										<p>대한민국<br>에어국제공항</p>
-										<strong>서울</strong>
-										<p>20/24˚C <i class="fas fa-cloud"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 5 (일)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>체크인</span>
-												<b>K19 - K28</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T1</b>
-											</li>
-											<li>
-												<span>게이트</span>
-												<b>G22</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="center">
-									<p>
-										<span>시차</span>
-										<b>7시간 00분</b>
-									</p>
-								</div>
-								<div class="inner-detail arrive">
-									<h3>목적지</h3>
-									<div>
-										<p>독일<br>암마인국제공항</p>
-										<strong>프랑크푸르트</strong>
-										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 4 (토)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T5</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
 						</li>
 						<li>
-							<a href="#" class="li">
+							<a href="#" class="flight-info">
 								<ul>
 									<li>14 : 25</li>
 									<li>프랑크푸르트</li>
@@ -351,65 +295,9 @@
 								</ul>
 							</a>
 							<!--datail-->
-							<div class="detail">
-								<div class="inner-detail departure">
-									<h3>출발지</h3>
-									<div>
-										<p>대한민국<br>에어국제공항</p>
-										<strong>서울</strong>
-										<p>20/24˚C <i class="fas fa-cloud"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 5 (일)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>체크인</span>
-												<b>K19 - K28</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T1</b>
-											</li>
-											<li>
-												<span>게이트</span>
-												<b>G22</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="center">
-									<p>
-										<span>시차</span>
-										<b>7시간 00분</b>
-									</p>
-								</div>
-								<div class="inner-detail arrive">
-									<h3>목적지</h3>
-									<div>
-										<p>독일<br>암마인국제공항</p>
-										<strong>프랑크푸르트</strong>
-										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 4 (토)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T5</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
 						</li>
 						<li>
-							<a href="#" class="li">
+							<a href="#" class="flight-info">
 								<ul>
 									<li>19 : 25</li>
 									<li>파리</li>
@@ -421,65 +309,9 @@
 								</ul>
 							</a>
 							<!--datail-->
-							<div class="detail">
-								<div class="inner-detail departure">
-									<h3>출발지</h3>
-									<div>
-										<p>대한민국<br>에어국제공항</p>
-										<strong>서울</strong>
-										<p>20/24˚C <i class="fas fa-cloud"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 5 (일)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>체크인</span>
-												<b>K19 - K28</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T1</b>
-											</li>
-											<li>
-												<span>게이트</span>
-												<b>G22</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="center">
-									<p>
-										<span>시차</span>
-										<b>7시간 00분</b>
-									</p>
-								</div>
-								<div class="inner-detail arrive">
-									<h3>목적지</h3>
-									<div>
-										<p>독일<br>암마인국제공항</p>
-										<strong>프랑크푸르트</strong>
-										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 4 (토)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T5</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
 						</li>
 						<li>
-							<a href="#" class="li">
+							<a href="#" class="flight-info">
 								<ul>
 									<li>19 : 25</li>
 									<li>파리</li>
@@ -491,65 +323,9 @@
 								</ul>
 							</a>
 							<!--datail-->
-							<div class="detail">
-								<div class="inner-detail departure">
-									<h3>출발지</h3>
-									<div>
-										<p>대한민국<br>에어국제공항</p>
-										<strong>서울</strong>
-										<p>20/24˚C <i class="fas fa-cloud"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 5 일요일</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>체크인</span>
-												<b>K19 - K28</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T1</b>
-											</li>
-											<li>
-												<span>게이트</span>
-												<b>G22</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="center">
-									<p>
-										<span>시차</span>
-										<b>7시간 00분</b>
-									</p>
-								</div>
-								<div class="inner-detail arrive">
-									<h3>목적지</h3>
-									<div>
-										<p>독일<br>암마인국제공항</p>
-										<strong>프랑크푸르트</strong>
-										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 4 (토)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T5</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
 						</li>
 						<li>
-							<a href="#" class="li">
+							<a href="#" class="flight-info">
 								<ul>
 									<li>19 : 25</li>
 									<li>파리</li>
@@ -561,65 +337,9 @@
 								</ul>
 							</a>
 							<!--datail-->
-							<div class="detail">
-								<div class="inner-detail departure">
-									<h3>출발지</h3>
-									<div>
-										<p>대한민국<br>에어국제공항</p>
-										<strong>서울</strong>
-										<p>20/24˚C <i class="fas fa-cloud"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 5 (일)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>체크인</span>
-												<b>K19 - K28</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T1</b>
-											</li>
-											<li>
-												<span>게이트</span>
-												<b>G22</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="center">
-									<p>
-										<span>시차</span>
-										<b>7시간 00분</b>
-									</p>
-								</div>
-								<div class="inner-detail arrive">
-									<h3>목적지</h3>
-									<div>
-										<p>독일<br>암마인국제공항</p>
-										<strong>프랑크푸르트</strong>
-										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 4 (토)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T5</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
 						</li>
 						<li>
-							<a href="#" class="li">
+							<a href="#" class="flight-info">
 								<ul>
 									<li>19 : 25</li>
 									<li>파리</li>
@@ -631,65 +351,9 @@
 								</ul>
 							</a>
 							<!--datail-->
-							<div class="detail">
-								<div class="inner-detail departure">
-									<h3>출발지</h3>
-									<div>
-										<p>대한민국<br>에어국제공항</p>
-										<strong>서울</strong>
-										<p>20/24˚C <i class="fas fa-cloud"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 5 (일)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>체크인</span>
-												<b>K19 - K28</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T1</b>
-											</li>
-											<li>
-												<span>게이트</span>
-												<b>G22</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="center">
-									<p>
-										<span>시차</span>
-										<b>7시간 00분</b>
-									</p>
-								</div>
-								<div class="inner-detail arrive">
-									<h3>목적지</h3>
-									<div>
-										<p>독일<br>암마인국제공항</p>
-										<strong>프랑크푸르트</strong>
-										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 4 (토)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T5</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
 						</li>
 						<li>
-							<a href="#" class="li">
+							<a href="#" class="flight-info">
 								<ul>
 									<li>19 : 25</li>
 									<li>파리</li>
@@ -701,65 +365,9 @@
 								</ul>
 							</a>
 							<!--datail-->
-							<div class="detail">
-								<div class="inner-detail departure">
-									<h3>출발지</h3>
-									<div>
-										<p>대한민국<br>에어국제공항</p>
-										<strong>서울</strong>
-										<p>20/24˚C <i class="fas fa-cloud"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 5 (일)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>체크인</span>
-												<b>K19 - K28</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T1</b>
-											</li>
-											<li>
-												<span>게이트</span>
-												<b>G22</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="center">
-									<p>
-										<span>시차</span>
-										<b>7시간 00분</b>
-									</p>
-								</div>
-								<div class="inner-detail arrive">
-									<h3>목적지</h3>
-									<div>
-										<p>독일<br>암마인국제공항</p>
-										<strong>프랑크푸르트</strong>
-										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 4 (토)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T5</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
 						</li>
 						<li>
-							<a href="#" class="li">
+							<a href="#" class="flight-info">
 								<ul>
 									<li>19 : 25</li>
 									<li>파리</li>
@@ -771,62 +379,6 @@
 								</ul>
 							</a>
 							<!--datail-->
-							<div class="detail">
-								<div class="inner-detail departure">
-									<h3>출발지</h3>
-									<div>
-										<p>대한민국<br>에어국제공항</p>
-										<strong>서울</strong>
-										<p>20/24˚C <i class="fas fa-cloud"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 5 (일)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>체크인</span>
-												<b>K19 - K28</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T1</b>
-											</li>
-											<li>
-												<span>게이트</span>
-												<b>G22</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="center">
-									<p>
-										<span>시차</span>
-										<b>7시간 00분</b>
-									</p>
-								</div>
-								<div class="inner-detail arrive">
-									<h3>목적지</h3>
-									<div>
-										<p>독일<br>암마인국제공항</p>
-										<strong>프랑크푸르트</strong>
-										<p>15/18˚C <i class="fas fa-cloud-sun"></i></p>
-									</div>
-									<div>
-										<ul>
-											<li>
-												<span>2019. 5. 4 (토)</span>
-												<b>오후 14 : 25</b>
-											</li>
-											<li>
-												<span>터미널</span>
-												<b>T5</b>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
 						</li>
 					</ul>
 					<!--//.list-->

@@ -1,73 +1,77 @@
 ::selection {
   color: #fff; 
-  background: #ed6978;
+  background: #fce804;
 }
 
 main {padding-top: 20px;}
 
 /*.top-content*/
-.top-content {width: 100%; height: 150px; border-bottom: 1px solid #009afa; background: url(../img/realtime-flight/bg_top_content.png) no-repeat bottom center / contain; color: #424242}
+.top-content {width: 100%; height: 150px; border-bottom: 1px solid #009afa; background: url(../img/realtime-flight/bg_top_content.png) no-repeat bottom center / cover; color: #424242}
 .top-content > div {position: relative; width: 100%; height: 100%; text-align: center;}
-.top-content > div h2 {position: absolute; top: 30%; left: 50%; transform: translateX(-50%); font-size: 26px;}
-.top-content > div p {position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); line-height: 1.4; font-size: 14px;}
+.top-content > div h2, .top-content > div p {position: absolute; width: 100%; left: 50%; transform: translateX(-50%); font-size: 22px;}
+.top-content > div h2 {top: 45%;}
+.top-content > div p {top: 65%; font-size: 12px; color: #7a7a7a;}
 
 /*.content-.content-tab*/
 .content {margin: 20px 0 40px;}
 .content .content-tab {width: 100%; height: 380px; margin: 0 auto;}
 .content .content-tab > .outline {height: auto;}
 .tab {overflow: hidden; width: 95%; margin: 0 auto;}
-.tab a {float: left; width: 50%; height: 100%; margin-top: 10px; font-size: 14px; line-height: 40px; text-align: center; background: #d8d8d8; border: 1px solid #d8d8d8; border-bottom: none;}
+.tab a {float: left; width: 50%; height: 100%; margin-top: 10px; font-size: 16px; line-height: 40px; text-align: center; background: #d8d8d8; border: 1px solid #d8d8d8; border-bottom: none;}
 .tab a.on {height: 50px; line-height: 50px; color: #009afa; margin-top: 0; background-color: #fff;}
+.tab i {margin-right: 15px;}
 .content-tab > .outline {width: 100%; height: 170px; padding: 20px 20px 20px;}
-.outline > p {font-size: 12px; line-height: 1.4;}
+.outline > p {font-size: 14px; line-height: 1.4; color: #424242;}
 
 /*sarch-form*/
 .search {position: relative; width: 100%; overflow: hidden; border-collapse: collapse;}
 .search legend {text-indent: -9999px;}
-.search select, .search input {display: block; float: left; width: 50%; height: 50px; padding: 5px 10px; border: 1px solid rgba(0, 154, 250, 0.3); vertical-align: middle; color: #7a7a7a}
-.search select:nth-of-type(1) {width: 100%;}
+.search select, .search input {display: block; float: left; width: 50%; height: 50px; padding: 5px 10px; border: 1px solid rgba(0, 154, 250, 0.3); vertical-align: middle; color: #7a7a7a;}
+.search select:nth-of-type(1) {width: 100%; background-position: 96.5%;}
 .search select:nth-of-type(3) {margin-left: 0;}
 .search select:nth-of-type(3), .search select:nth-of-type(4) {width: 50%;}
 .search .flight-name {width: 100%;}
 .search .flight-date {width: 50%;}
-.search .fa-calendar-alt {position: absolute; display: inline-block; width: 10px; height: 10px; left: 130px; top: 80px;}
+.search .fa-calendar-alt {position: absolute; display: inline-block; width: 12px; height: 12px; left: 42%; top: 83px;}
 .search .fa-search {position: absolute; bottom: 15px; right: 14px;}
 .search i {color: #009afa;}
 
 /*.content-.flight-list*/
 .flight-list {width: 100%; margin: 0 auto; padding: 0 20px;}
 .flight-list .update {overflow: hidden; width: 100%;}
-.update p {float: left; font-size: 12px; color: #424242; margin-top: 10px;}
-.update a {float: right; padding: 5px 5px; font-size: 12px; color: #424242; border: 1px solid #d8d8d8; border-radius: 50%;}
+.update a {float: left; padding: 5px 5px; font-size: 12px; color: #424242; border: 1px solid #d8d8d8; border-radius: 50%; margin-right: 10px;}
+.update p {color: #424242; margin-top: 10px; font-size: 12px;}
 
-.list {overflow: hidden; width: 100%; margin-top: 10px;}
-.list > li {overflow: hidden; width: 100%; transition: all 0.3s;}
+.inner-flight-list {overflow: hidden; width: 100%; margin-top: 10px;}
+.inner-flight-list > li {overflow: hidden; width: 100%; transition: all 0.3s;}
 
-.list .list-header {height: 60px; color: #fff; border: none; display: none;}
-.list .list-header li {float: left; text-align: center; line-height: 60px;}
+/* 리스트헤더 */
+.inner-flight-list .list-header {height: 60px; color: #fff; border: none; background-color: #009afa; display: none;}
+.inner-flight-list .list-header li {float: left; text-align: center; line-height: 60px;}
 
-.li {display: block; width: 100%; margin-top: 10px; border: 1px solid #d8d8d8; border-top: 3px solid #009afa}
-.li ul {width: 100%; overflow: hidden;}
-.li ul li {float: left; text-align: center; line-height: 50px;}
+/* 리스트 */
+.inner-flight-list .flight-info {display: block; width: 100%; margin-top: 10px; padding: 0 3%; border: 1px solid #d8d8d8; border-top: 3px solid #009afa;}
+.inner-flight-list .flight-info ul {width: 100%; overflow: hidden;}
+.inner-flight-list .flight-info ul li {float: left; text-align: center; line-height: 50px;}
 
-/*list width*/
-.list ul li {width: 50%; padding: 0 4%;}
-.list ul li:nth-child(1) {text-align: left;}
-.list ul li:nth-child(2) {text-align: right;}
-.list ul li:nth-child(3) {width: 40%; text-align: left;}
-.list ul li:nth-child(4) {width: 20%;}
-.list ul li:nth-child(5), .list ul li:nth-child(6) {width: 33.3333%; display: none;}
-.list ul li:nth-child(7) {width: 40%; text-align: right;}
+/* 리스트 width */
+.flight-info ul li {width: 50%;/* padding: 0 4%;*/}
+.flight-info ul li:nth-child(1) {text-align: left;}
+.flight-info ul li:nth-child(2) {text-align: right;}
+.flight-info ul li:nth-child(3) {width: 40%; text-align: left;}
+.flight-info ul li:nth-child(4) {width: 20%;}
+.flight-info ul li:nth-child(5),
+.flight-info ul li:nth-child(6) {width: 33.3333%; display: none;}
+.flight-info ul li:nth-child(7) {width: 40%; text-align: right;}
 
-/*list border, bg*/
-.list > li:nth-child(1) {background-color: #009afa;}
-.list > li:nth-child(2) {border-top: 1px solid #d8d8d8;}
+/* 리스트 border, bg */
+.inner-flight-list > li:nth-child(1) {background-color: #009afa;}
+.inner-flight-list > li:nth-child(2) {border-top: 1px solid #d8d8d8;}
 
-.li:hover, .li:focus, .list > li.on a {background: rgba(66, 66, 66, 0.8); color: #fff;}
+.flight-info:hover, .flight-info:focus, .inner-flight-list > li.on a {background: rgba(66, 66, 66, 0.8); color: #fff;}
 
-/*.list li - status*/
-/*.li .status { padding-right: 20px;}*/
-.status:after {content: ''; display: inline-block; width: 10px; height: 10px; margin-left: 10px; border-radius: 50%; background: #30BA40}
+/*.inner-flight-list li - status (출발현황)*/
+.status:after {content: ''; display: inline-block; width: 10px; height: 10px; margin-left: 10px; border-radius: 50%; background: #30BA40;}
 li:nth-child(2) .status:after {background: #30BA40;}
 li:nth-child(3) .status:after {background: #FF6A19;}
 li:nth-child(4) .status:after {background: #F7CB2A;}
@@ -78,48 +82,65 @@ li:nth-child(8) .status:after {background: #5165E8;}
 li:nth-child(9) .status:after {background: #5165E8;}
 li:nth-child(10) .status:after {background: #5165E8;}
 
-/*detail*/
-.detail {width: 100%; height: auto; font-size: 14px; background: url(../img/realtime-flight/bg_detail.png) no-repeat center / auto 550px; color: #fff; display: none;}
+/* 항공편 상세정보 */
+.flight-detail {width: 100%; height: auto; padding: 0 2%; font-size: 14px; background: url(../img/realtime-flight/bg_detail.png) no-repeat center / auto 570px; color: #fff; display: none;}
 
-.departure, .arrive {width: 100%; padding: 2% 4%;}
+.departure, .arrive {width: 100%;}
 
-.center {width: 100%; height: auto; text-align: center; overflow: hidden;}
-.center p {float: left; width: 30%; padding: 10px; line-height: 1.4; font-size: 14px; font-weight: 300; margin: 0 auto;}
-.center:before, .center:after {float: left; content: ''; display: inline-block; width: 30%; margin: 30px 2%; border: 0.5px solid rgba(239, 239, 239, 0.2);}
+.inner-flight-info {text-align: center;}
+.inner-flight-info h3 {height: 40px; line-height: 40px;}
+.info-airline, .info-detail {height: 50px; margin-bottom: 10px;}
+.info-airline .airport, .info-airline .city, .info-airline .weather {float: left; text-align: center; line-height: 40px;}
+.info-airline .airport {width: 25%; line-height: 1.4;}
+.info-airline .city {width: 50%; font-size: 24px; color: #fce804;}
+.info-airline .weather {width: 25%;}
+.info-airline .weather i {margin-left: 10px; font-size: 20px;}
 
-.detail h3 {height: 40px; font-weight: 400; line-height: 40px; text-align: center;}
-.detail span {display: block;}
+.inner-flight-info .info-detail ul {overflow: hidden; width: 100%;}
+.inner-flight-info .info-detail ul li {float: left; text-align: center;}
+.info-detail ul li:nth-child(1) {width: 25%; letter-spacing: -1px;}
+.info-detail ul li:nth-child(2) {width: 25%;}
+.info-detail ul li:nth-child(3) {width: 25%;}
+.info-detail ul li:nth-child(4) {width: 25%;}
+.info-detail span, .info-detail b {display: block; margin-bottom: 7px;}
 
-.inner-detail div:nth-child(3) {margin-top: 5px; padding: 10px 0;}
+.arrive .info-detail li {overflow: hidden;}
+.arrive .info-detail li:nth-child(2) {float: right;}
+/* 시차 */
+.center {width: 100%; height: 40px; text-align: center; overflow: hidden; line-height: 40px;}
+.center p {float: left; width: 30%; padding: 0 10px; font-size: 14px; font-weight: 300; margin: 0 auto;}
+.center:before, .center:after {float: left; content: ''; display: inline-block; width: 30%; margin: 20px 2%; border: 0.5px solid rgba(239, 239, 239, 0.2);}
 
-.inner-detail div {overflow: hidden;}
-.inner-detail div p, .inner-detail > div strong {float: left;}
-.inner-detail strong {width: 40%; color: #fce804; font-size: 20px; font-weight: 500; text-align: center; line-height: 2;}
-.inner-detail p {width: 30%; font-size: 14px; line-height: 1.4;}
-.inner-detail p:last-child {text-align: center;}
-.inner-detail b, .center b {font-weight: 300;}
-
-
-/*위에 .list ul li 가 선언된 내용 때문에 width값이 적용 안되던 문제 때문에
-클래스명을 추가로 붙여서 우선순위 값을 높여서 적용.*/
-.detail .departure div ul li {float: left; line-height: 1.5; font-weight: 300; text-align: center; padding: 0;}
-.detail .departure div ul li:nth-child(1) {width: 35%; text-align: left;}
-.detail .departure div ul li:nth-child(2) {width: 30%;}
-.detail .departure div ul li:nth-child(3) {width: 17.5%;}
-.detail .departure div ul li:nth-child(4) {width: 17.5%;}
-
-.detail .arrive div ul li {float: left; width: 80%; line-height: 1.4; font-weight: 300; padding: 0;}
-.detail .arrive div ul li:last-child {width: 20%; text-align: center;}
-
-/*weather*/
-.detail .fas {font-size: 24px; margin-left: 5px;}
-
-/*btn-more*/
+/* 리스트 더보기 */
 .btn-more {display: none; width: 150px; height: 50px; margin: 20px auto 0; padding: 10px 15px; font-size: 20px; color: #000;}
+
+
+/* form요소 focus 테두리 제거*/
+input:focus, select:focus {
+	outline: none;
+}
+
+/* input/select ios 대응*/
+input {
+	appearance: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	background: url('../img/realtime-flight/select-arrow.png') no-repeat 93% 50% / 14px;
+}
+select::-ms-expand {display:none} /* select 화살표 IE 대응 */
 
 
 /* tablet - iPad */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+	/*search*/
+	.search .fa-calendar-alt {left: 45%; top: 82px;}
+	
 	/*detail*/
 	.detail {font-size: 16px;}
 	.center {padding-left: 1.5%}
@@ -129,74 +150,76 @@ li:nth-child(10) .status:after {background: #5165E8;}
 }
 
 /* PC - 1280px 이상 */
-@media screen and (min-width:1280px) {
+@media screen and (min-width: 1280px) {
 	#wrap {box-sizing: border-box;}
 	.top-content {height: 270px;}
-	.top-content > div h2 {top: 40%; font-size: 32px; font-weight: 700;}
-	.top-content > div p {top: 55%;}
+	.top-content > div h2 {top: 45%; font-size: 32px; font-weight: 700;}
+	.top-content > div p {top: 60%; font-size: 14px;}
 
 	/*.content-tab*/
 	.tab {width: 1280px;}
 	.content .content-tab {height: 240px;}
 	.content-tab > .outline {width: 1280px; height: 170px; margin: 0 auto; border: 1px solid #d8d8d8; border-top: none;}
+	
 	/*search-form*/
 	.search select, .search input {width: 150px; padding: 5px 10px;}
 	.search select:nth-of-type(1) {width: 150px;}
 	.search select:nth-of-type(3) {margin-left: 18px;}
-	.search select:nth-of-type(3), .search select:nth-of-type(4) {width: 200px;}
+	.search select:nth-of-type(3),
+	.search select:nth-of-type(4) {width: 200px;}
 	.search .flight-name {width: 300px; }
 	.search .flight-date {width: 200px; margin-left: 18px;}
 	.search .fa-calendar-alt {left: 337px; top: 32px;}
+	
+	/*update*/
+	.update p {font-size: 16px; margin-top: 5px;}
 
 	/*.content-.flight-list*/
 	.flight-list {width: 1280px;}
-	.list .list-header {display: block;}
+	.inner-flight-list .list-header {display: block;}
+	.inner-flight-list .list-header ul li {text-align: center;}
 
-	/*list width*/
-	.li ul {width: 1240px; height: 80px;}
-	.list > li {/*height: 80px;*/ border-bottom: 1px dashed #d8d8d8;}
-	.list ul li {height: 80px; padding: 0; line-height: 80px;}
-	.list ul li:nth-child(1), .list ul li:nth-child(2) {width: 150px; text-align: center;}
-	.list ul li:nth-child(3) {width: 320px; text-align: center;}
-	.list ul li:nth-child(4) {width: 130px;}
-	.list ul li:nth-child(5) {width: 200px; display: block;}
-	.list ul li:nth-child(6) {width: 100px; display: block;}
-	.list ul li:nth-child(7) {width: 190px; text-align: center;}
+	/* 항공편 리스트 */
+
+	.inner-flight-list .flight-info {padding: 0;}
+	.inner-flight-list .flight-info ul li {height: 80px; line-height: 80px;}
 	
-	/*list border, bg*/
-	.li {height: 100%; border: none; margin-top: 0;}
-	.list > li:nth-child(odd) {background-color: #f7f7f7;}
-	.list > li:nth-child(1) {background-color: #009afa;}
-	.list > li:last-child {border-bottom: 1px solid #d8d8d8;}
+	.inner-flight-list li ul li {height: 80px; padding: 0;}
+	.inner-flight-list li ul li:nth-child(1),
+	.inner-flight-list li ul li:nth-child(2) {width: 150px; text-align: center;}
+	.inner-flight-list li ul li:nth-child(3) {width: 320px; text-align: center;}
+	.inner-flight-list li ul li:nth-child(4) {width: 130px;}
+	.inner-flight-list li ul li:nth-child(5) {width: 200px; display: block;}
+	.inner-flight-list li ul li:nth-child(6) {width: 100px; display: block;}
+	.inner-flight-list li ul li:nth-child(7) {width: 188px;}
+	.flight-info .status {padding-right: 50px;}
 	
-	/*detail*/
-	.detail {height: 300px; background-size: cover;}
-	.detail > div {float: left;}
-
-	.center {width: 120px; height: 100%; text-align: center;}
-	.center p {width: 100%; height: 75px; padding: 10px; line-height: 1.8;}
-	.center:before, .center:after {content: ''; display: block; width: 0; height: 90px; margin: 10px 50%; border: 0.5px solid rgba(239, 239, 239, 0.2);}
-
-	.departure, .arrive {width: 560px; height: 100%; padding: 0 20px;}
-
-	.inner-detail div:nth-child(2) {height: 100px; padding-top: 20px;}
-	.inner-detail div:nth-child(3) {height: 120px; padding-top: 20px;}
-
-	.inner-detail strong {width: 270px; font-size: 32px;}
-	.inner-detail p {width: 125px; font-size: 16px; line-height: 1.8;}
-
-	.detail {font-size: 16px;}
-	.detail h3 {height: 80px; font-size: 22px; line-height: 80px;}
-
-	.detail .departure div ul li {float: left; line-height: 1.7; text-align: center;}
-	.detail .departure div ul li:nth-child(1) {width: 33%; text-align: left;}
-	.detail .departure div ul li:nth-child(2) {width: 35%;}
-	.detail .departure div ul li:nth-child(3) {width: 16%;}
-	.detail .departure div ul li:nth-child(4) {width: 16%;}
-
-	.detail .arrive div ul {width: 100%; height: 100%;}
-	.detail .arrive div ul li {float: left; text-align: left; width: 40%; line-height: 1.7;}
-	.detail .arrive div ul li:last-child {width: 60%; padding-left: 180px;}
+	/* 항공편 리스트 border, bg*/
+	.inner-flight-list .flight-info {height: 100%; border: none; margin-top: 0;}
+	.inner-flight-list > li {border-bottom: 1px dashed #d8d8d8;}
+	.inner-flight-list > li:nth-child(odd) {background-color: #f7f7f7;}
+	.inner-flight-list > li:nth-child(1) {background-color: #009afa;}
+	.inner-flight-list > li:last-child {border-bottom: 1px solid #d8d8d8;}
+	
+	/* 항공편 상세 */
+	.flight-detail {height: 270px; background-size: cover; padding: 2% 1%;}
+	.flight-detail > div {float: left; height: 100%;}
+	.flight-detail .inner-flight-info {width: 45%;}
+	.inner-flight-info h3 {height: 50px; line-height: 50px; font-size: 18px;}
+	.info-airline .airport, .info-airline .city, .info-airline .weather {height: 100%; font-weight: 300; line-height: 60px;}
+	.info-airline, .info-detail {height: 70px; margin-bottom: 30px;}
+	.info-airline .airport {width: 25%; font-size: 18px; line-height: 1.7;}
+	.info-airline .city {font-size: 28px;}
+	.info-airline .weather {font-size: 18px;}
+	.info-airline .weather i {font-size: 24px;}
+	
+	.flight-detail .inner-flight-info .info-detail ul li {padding: 0; width: 25%; font-size: 18px; font-weight: 300;}
+	.info-detail span {margin-bottom: 10px;}
+	
+	/* 시차 */
+	.center {width: 10%;}
+	.center p {float: none; width: 100%;}
+	.center:before, .center:after {float: none; display: block; width: 0; height: 35%; margin: 10% auto;}
 }
 
 
