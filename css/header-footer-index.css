@@ -878,14 +878,16 @@ address,
 .modal-my-terminal form > input[type="text"] {
     float: left;
     width: 70%;
-    padding: 10px 0;
+    height: 100%;
+   /* padding: 10px 0; */
     text-indent: 10px;
 }
 
 .modal-my-terminal form > .submit {
     float: right;
     width: 30%;
-    padding: 15px 0;
+    height: 100%;
+    /* padding: 15px 0; */
     text-align: center;
     color: #fff;
     background-color: #265B7F;
