@@ -232,6 +232,7 @@ select::-ms-expand {display:none} /* select 화살표 IE 대응 */
 	
 	.flight-detail .inner-flight-info .info-detail ul li {padding: 0; width: 25%; font-size: 18px; font-weight: 300;}
 	.info-detail span {margin-bottom: 10px;}
+	.info-detail b {font-weight: 300;}
 	
 	/* 시차 */
 	.center {width: 10%;}
