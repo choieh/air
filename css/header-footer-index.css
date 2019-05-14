@@ -14,7 +14,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: #0099ff;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -55,7 +55,7 @@ header {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    z-index: 2000;
+    z-index: 4000;
 }
 
 .nav-bar .item {
@@ -274,6 +274,7 @@ footer {
 
 address {
     margin-bottom: 10px;
+    font-style: normal;
 }
 
 address,
@@ -301,16 +302,21 @@ address,
 
 
 /*#quick*/
-.quick-before::before {
+.quick-bg {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    content: '';
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.9);
     z-index: -1;
 }
+
+.quick-bg.on{
+    display: block;
+}
+
 
 #quick {
     position: fixed;
@@ -498,7 +504,7 @@ address,
 
 .modal-my-terminal form > .submit {
     display: block;
-    padding: 15px 0;
+    padding: 10px 0;
     text-align: center;
     color: #fff;
     background-color: #265B7F;
@@ -507,7 +513,7 @@ address,
 .modal-my-terminal .desc {
     width: 90%;
     margin: 0 auto;
-    color: #fff;
+    color: #fce804;
     /*    font-size: 18px;*/
     font-size: 1.125em;
     line-height: 20px;
@@ -641,7 +647,7 @@ address,
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 40px;
+    height: 60px;
 }
 
 .gnb-web > .gnb-web-list{
@@ -664,7 +670,7 @@ address,
     width: 100%;
     height: 100%;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 60px;
 }
 
 .gnb-web > .gnb-web-list > li:hover>a{
@@ -683,7 +689,7 @@ address,
 .web-sub-menu{
     display: none;
     position: absolute;
-    top: 41px;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 50px;
@@ -771,7 +777,7 @@ address,
     transform: translateY(50%);
     background-color: #222;
     border-radius: 15px 0 0 15px;
-    z-index: 3000;
+    z-index: 4000;
 }
 
 .quick-menu-list {
@@ -872,14 +878,16 @@ address,
 .modal-my-terminal form > input[type="text"] {
     float: left;
     width: 70%;
-    padding: 10px 0;
+    height: 100%;
+   /* padding: 10px 0; */
     text-indent: 10px;
 }
 
 .modal-my-terminal form > .submit {
     float: right;
     width: 30%;
-    padding: 15px 0;
+    height: 100%;
+    /* padding: 15px 0; */
     text-align: center;
     color: #fff;
     background-color: #265B7F;
@@ -887,12 +895,6 @@ address,
     
     
 /*footer*/
-    footer{
-/*        display: none;*/
-        height: 100%;
-        padding-top: 50px;
-        box-sizing: border-box;
-    }    
     
 .inner-footer {
     width: 1280px;
@@ -907,8 +909,8 @@ address,
 .lnb li a,    
 address,
 .info-copy > p {
-    /*    font-size: 18px;*/
-    font-size: 1.125em;
+    /*    font-size: 15px;*/
+    font-size: 0.9375em;
 }
     
 .lnb li:hover{
