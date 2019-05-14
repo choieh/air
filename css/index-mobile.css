@@ -1,4 +1,8 @@
 @charset "utf-8";
+::selection {
+  color: #fff; 
+  background: #fce804;
+}
 
 #wrap {
     width: 100%;
