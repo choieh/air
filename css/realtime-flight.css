@@ -92,16 +92,16 @@ li:nth-child(9) .status:after {background: #5165E8;}
 li:nth-child(10) .status:after {background: #5165E8;}
 
 /* 항공편 상세정보 */
-.flight-detail {width: 100%; height: 360px; padding: 0 2%; font-size: 14px; background: url(../img/realtime-flight/bg_detail.png) no-repeat center / auto 570px; color: #fff; display: none;}
+.flight-detail {width: 100%; height: 390px; padding: 0 2%; font-size: 14px; background: url(../img/realtime-flight/bg_detail.png) no-repeat center / auto 570px; color: #fff; display: none;}
 
 .departure, .arrive {width: 100%;}
 
 .inner-flight-info {text-align: center;}
 .inner-flight-info h3 {height: 40px; line-height: 40px; font-weight: 300;}
-.info-airline, .info-detail {height: 50px; margin-bottom: 10px;}
+.info-airline, .info-detail {height: 50px; margin-bottom: 20px;}
 .info-airline .airport, .info-airline .city, .info-airline .weather {float: left; text-align: center; line-height: 40px;  font-weight: 300;}
 .info-airline .airport {width: 30%; line-height: 1.4; letter-spacing: -1px;}
-.info-airline .city {width: 40%; font-size: 24px; color: #fce804; font-weight: 500;}
+.info-airline .city {width: 40%; font-size: 20px; color: #fce804; font-weight: 500;}
 .info-airline .weather {width: 30%;}
 .info-airline .weather i {margin-left: 5px; font-size: 20px;}
 
