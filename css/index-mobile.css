@@ -120,6 +120,7 @@ main {
     /*    font-size: 28px;*/
     font-size: 1.750em;
     text-align: center;
+    font-weight: 500;
 }
 
 .main-search-flight {
@@ -166,6 +167,7 @@ main {
 
 .flight-form h3 {
     margin-bottom:10px;
+    font-weight: 500;
 }
 
 
