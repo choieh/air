@@ -34,7 +34,7 @@ main {padding-top: 20px;}
 .search .flight-date {width: 50%;}
 .search .fa-calendar-alt {position: absolute; display: inline-block; width: 12px; height: 12px; left: 42%; top: 83px;}
 .search .fa-search {position: absolute; bottom: 15px; right: 14px;}
-.search i {color: #009afa;}
+.search i {color: rgba(0, 154, 250, 0.3);}
 
 /* form border collepse */
 .search .select-terminal,
@@ -79,7 +79,7 @@ main {padding-top: 20px;}
 
 .flight-info:hover, .flight-info:focus, .inner-flight-list > li.on a {background: rgba(66, 66, 66, 0.8); color: #fff;}
 
-/*.inner-flight-list li - status (출발현황)*/
+/* 리스트 status (출발현황 컬러)*/
 .status:after {content: ''; display: inline-block; width: 10px; height: 10px; margin-left: 10px; border-radius: 50%; background: #30BA40;}
 li:nth-child(2) .status:after {background: #30BA40;}
 li:nth-child(3) .status:after {background: #FF6A19;}
