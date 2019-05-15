@@ -146,6 +146,17 @@ nav.on {
     margin-left: 0;
 }
 
+.tnb a:nth-child(1)>span{
+    font-size: 0;
+    color: transparent;
+}
+
+.tnb a:nth-child(1):before{
+    content: '\f015';
+    font-weight: 600;
+    font-family: 'Font Awesome 5 Free';
+}
+
 /*gnb-web*/
 .gnb-web{
     display: none;
