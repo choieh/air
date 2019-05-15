@@ -645,6 +645,11 @@ address,
         /*    font-size: 12px;*/
         font-size: 0.75em;
     }
+    
+     .tnb a:nth-child(1) {
+        display: none;
+    }
+
 
 
     /*gnb-mobile*/
