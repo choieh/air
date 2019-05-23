@@ -77,7 +77,8 @@ main {padding-top: 20px;}
 .inner-flight-list > li:nth-child(1) {background-color: #009afa;}
 .inner-flight-list > li:nth-child(2) {border-top: 1px solid #d8d8d8;}
 
-.flight-info:hover, .flight-info:focus, .inner-flight-list > li.on a {background: rgba(66, 66, 66, 0.8); color: #fff;}
+/* .inner-flight-list > li.on a {background: rgba(66, 66, 66, 0.8); color: #fff;} */
+.inner-flight-list > .flight-info-box.on .flight-info {background: rgba(66, 66, 66, 0.6); color: #fff;}
 
 /* 리스트 status (출발현황 컬러)*/
 .status:after {content: ''; display: inline-block; width: 10px; height: 10px; margin-left: 10px; border-radius: 50%; background: #30BA40;}
@@ -92,7 +93,8 @@ li:nth-child(9) .status:after {background: #5165E8;}
 li:nth-child(10) .status:after {background: #5165E8;}
 
 /* 항공편 상세정보 */
-.flight-detail {width: 100%; height: 390px; padding: 0 2%; font-size: 14px; background: url(../img/realtime-flight/bg_detail.png) no-repeat center / auto 570px; color: #fff; display: none;}
+.flight-detail {width: 100%; height: 0; padding: 0 2%; font-size: 14px; background: url(../img/realtime-flight/bg_detail.png) no-repeat center / auto 570px; color: #fff; overflow: hidden;}
+.flight-detail-box {width: 100%; height: 390px}
 
 .departure, .arrive {width: 100%;}
 
@@ -233,10 +235,11 @@ select::-ms-expand {display:none} /* IE:select 화살표 숨기기*/
 	.inner-flight-list > li:last-child {border-bottom: 1px solid #d8d8d8;}
 	
 	/* 항공편 상세 */
-	.flight-detail {height: 270px; background-size: cover; padding: 2% 1%;}
-	.flight-detail > div {float: left; height: 100%;}
+	.flight-detail {height: 0; background-size: cover; padding: 0; overflow: hidden;}
+	.flight-detail .flight-detail-box {height: 270px;}
+	.flight-detail .flight-detail-box > div {float: left; height: 100%;}
 	.flight-detail .inner-flight-info {width: 45%;}
-	.inner-flight-info h3 {height: 50px; line-height: 50px; font-size: 18px;}
+	.inner-flight-info h3 {height: 50px; line-height: 50px; font-size: 18px; margin-top: 3%;}
 	.info-airline .airport, .info-airline .city, .info-airline .weather {height: 100%; font-weight: 300; line-height: 60px;}
 	.info-airline, .info-detail {height: 70px; margin-bottom: 30px;}
 	.info-airline .airport {width: 25%; font-size: 18px; line-height: 1.7;}
