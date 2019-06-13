@@ -109,7 +109,7 @@ header {
 
 
 /*nav*/
-nav {
+#nav {
     position: fixed;
     top: 0;
     right: -100%;
@@ -121,7 +121,7 @@ nav {
     transition: all 0.2s;
 }
 
-nav.on {
+#nav.on {
     right: 0;
 }
 
@@ -553,7 +553,7 @@ address,
 
 /*미디어 쿼리*/
 @media all and (min-width:768px) {
-    nav {
+    #nav {
         right: -50%;
         width: 50%;
     }
@@ -617,7 +617,7 @@ address,
 
 
     /*nav*/
-    nav {
+    #nav {
         position: absolute;
         top: 0;
         right: 20px;

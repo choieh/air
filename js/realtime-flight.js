@@ -37,13 +37,16 @@ $(document).ready(function() {
 			$(this).parent().removeClass('on');
 			$(this).parent().find('.flight-detail').stop().animate({
 				'height': 0
-			}, 1000);
+			}, 500);
 		} else {
 			$('.inner-flight-list > .flight-info-box').removeClass('on');
+			$('.inner-flight-list > .flight-info-box .flight-detail').stop().animate({
+				'height': 0
+			}, 500);
 			$(this).parent().addClass('on');
 			$(this).parent().find('.flight-detail').stop().animate({
 				'height': detailHeight
-			}, 1000);
+			}, 500);
 		}
 	});
 });
