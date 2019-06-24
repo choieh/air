@@ -119,7 +119,7 @@
 			</section>
 			<!--//.top-content-->
 			<section class="content">
-				<article class="content-tab">
+				<div class="content-tab">
 					<div class="tab">
 						<a href="#" class="on"><i class="fas fa-plane-departure"></i> 출발</a>
 						<a href="#"><i class="fas fa-plane-arrival"></i> 도착</a>
@@ -134,16 +134,19 @@
 								<legend>항공편검색</legend>
 
 								<!--https://www.w3schools.com/howto/howto_custom_select.asp-->
-								<select name="terminal" class="select-terminal">
+								<label for="terminal" class="hidden-label">터미널선택</label>
+								<select name="terminal" class="select-terminal" id="terminal">
 									<option value="terminal00" selected>전체 터미널</option>
 									<option value="terminal01">T1</option>
 									<option value="terminal02">T2</option>
 								</select>
 
+								<label for="calendar" class="hidden-label">날짜선택</label>
 								<input type="text" id="calendar" placeholder="YYYY.MM.DD" class="datepicker-here" data-language="ko" data-position="bottom left">
 								<label for="calendar"><i class="far fa-calendar-alt"></i></label>
 
-								<select name="time" id="" class="select-time">
+								<label for="time" class="hidden-label">시간선택</label>
+								<select name="time" id="time" class="select-time">
 									<option value="time00" selected>전체 시간</option>
 									<option value="time01">09:30 이후</option>
 									<option value="time01">11:30 이후</option>
@@ -153,7 +156,8 @@
 									<option value="time01">19:30 이후</option>
 									<option value="time01">21:30 이후</option>
 								</select>
-								<select name="destination" id="" class="select-arrive">
+								<label for="destination" class="hidden-label">목적지선택</label>
+								<select name="destination" id="destination" class="select-arrive">
 									<option selected disabled hidden>목적지 선택</option>
 									<option value="dtn01">괌</option>
 									<option value="dtn01">교토</option>
@@ -165,7 +169,8 @@
 									<option value="dtn01">프랑크푸르트</option>
 									<option value="dtn01">하와이</option>
 								</select>
-								<select name="airline" id="" class="select-airline">
+								<label for="airline" class="hidden-label">항공사선택</label>
+								<select name="airline" id="airline" class="select-airline">
 									<option selected disabled hidden>항공사 선택</option>
 									<option value="line01">대한항공</option>
 									<option value="line03">루프트한자</option>
@@ -176,19 +181,20 @@
 									<option value="line05">티웨이항공</option>
 									<option value="line08">캐나다항공</option>
 								</select>
-								<input type="text" placeholder="편명입력" class="flight-name">
-								<a href="#" class="btn-search">
+								<label for="flight-name" class="hidden-label">항공편검색</label>
+								<input type="text" placeholder="편명입력" class="flight-name" id="flight-name">
+								<a href="#" class="btn-search" title="검색버튼">
 									<i class="fas fa-search"></i>
 								</a>
 							</fieldset>
 						</form>
 					</div>
 					<!--//.search-->
-				</article>
+				</div>
 				<!--//.content-tab-->
-				<article class="flight-list">
+				<div class="flight-list">
 					<div class="update">
-						<a href="JavaScript:window.location.reload()"><i class="fas fa-redo-alt"></i></a>
+						<a href="JavaScript:window.location.reload()" title="새로고침"><i class="fas fa-redo-alt"></i></a>
 						<p>마지막 업데이트 : 2019.05.02 (목) 16:02</p>
 					</div>
 					<ul class="inner-flight-list">
@@ -273,7 +279,7 @@
 											</ul>
 										</div>
 									</div>
-								</div.>
+								</div>
 							</div>
 						</li>
 						<li class="flight-info-box">
@@ -633,7 +639,7 @@
 											</ul>
 										</div>
 									</div>
-								</div class="flight-detail-box">
+								</div>
 							</div>
 						</li>
 						<li class="flight-info-box">
@@ -705,7 +711,7 @@
 											</ul>
 										</div>
 									</div>
-								</div class="flight-detail-box">
+								</div>
 							</div>
 						</li>
 						<li class="flight-info-box">
@@ -777,7 +783,7 @@
 											</ul>
 										</div>
 									</div>
-								</div class="flight-detail-box">
+								</div>
 							</div>
 						</li>
 						<li class="flight-info-box">
@@ -855,7 +861,7 @@
 					</ul>
 					<!--//.inner-flight-list-->
 					<a href="#" class="btn-more"><i class="fa fa-plus-square-o" aria-hidden="true"></i> more</a>
-				</article>
+				</div>
 				<!--//.flight-list-->
 			</section>
 			<!--//.content-->
@@ -919,7 +925,8 @@
 				</div>
 				<p class="m-title">check your terminal</p>
 				<form>
-					<input type="text" placeholder="항공편명을 입력하세요." class="m-input">
+					<label for="m-flight-name" class="hidden-label">항공편검색</label>
+					<input type="text" placeholder="항공편명을 입력하세요." class="m-input" id="m-flight-name">
 					<a href="#" class="submit">확인</a>
 				</form>
 				<p class="desc">항공편명을 입력하시면 이용하실 터미널을 알려드립니다.</p>
